@@ -1,0 +1,528 @@
+.additionalDetailsHeader{
+   margin: 6rem auto 3rem auto;
+   background-color: $blue1;
+   padding: 4rem 4rem;
+
+   h3{
+      @include F1R;
+      line-height: 140%;
+      font-size: 2.2rem;
+      color: $white;
+   }
+}
+
+.cart2-Section{
+   padding: 4rem;
+   background-color: #E8E8E8;
+   margin-bottom: 3rem;
+
+   &__heading{
+      @include Flex1;
+         
+      h3{
+         @include F1R;
+         font-size: 2.2rem;
+         line-height: 140%;
+         color: $blue1;
+      }
+
+      p{
+         position: relative;
+      
+         img{
+            width: 3rem;
+            cursor: pointer;
+         }
+
+         span{
+            position: absolute;
+            bottom: 6rem;
+            right: 1rem;
+            background-color: $oran1;
+            padding: 1rem;
+
+            width: 25rem;
+            border-radius: 6px;
+            border-bottom-right-radius: 0;
+
+            @include P2;
+            color: $white;
+            text-align: center;
+
+            display: none;
+
+            &::after{
+               content: "";
+               position: absolute;
+               top: 100%;
+               left: 100%;
+               margin-left: -20px;
+               border: 10px solid transparent;
+               border-right-color: $oran1;
+               border-top-color: $oran1;
+            }
+         }
+
+         &:hover{
+            span{
+               @include slideD-5px;
+               display: block;
+            }
+         }
+      }
+   }
+
+   &__detail{
+      margin-top: 2rem;
+
+      p{
+         @include F1R;
+         font-size: 1.6rem;
+         color: #979797;
+         margin-bottom: 1rem;
+      }
+   }
+
+}
+
+.personalDetailsWrap{
+   padding-top: 4rem;
+   background-color: #E8E8E8;
+   margin-bottom: 3rem;
+
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-column-gap: 4rem;
+   grid-template-rows: max-content  1fr;
+   align-items: start;
+
+   &__head{
+      padding-left: 4rem;
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 1;
+
+      h3{
+         @include F1R;
+         font-size: 1.8rem;
+         color: $blue1;
+      }
+   }
+
+   .personalDetails{
+      padding-right: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2rem;
+      grid-template-rows: max-content 1fr 1fr 1fr 1fr;
+
+      &__heading{
+         grid-column: 1 / span 2;
+         grid-row: 1 / span 1;
+      }
+
+      &__fName{
+         grid-column: 1 / span 1;
+         grid-row: 2 / span 1;
+      }
+
+      &__lName{
+         grid-column: 2 / span 1;
+         grid-row: 2 / span 1;
+      }
+
+      &__email{
+         grid-column: 1 / span 2;
+         grid-row: 3 / span 1;
+      }
+
+      &__phone{
+         grid-column: 1 / span 2;
+         grid-row: 4 / span 1;
+      }
+
+      &__mobile{
+         grid-column: 1 / span 2;
+         grid-row: 5 / span 1;
+      }
+   }
+
+   .personalAddress{
+      padding-left: 0;
+      &__heading{
+      
+      }
+
+      &__postCode{
+         margin-top: 4.5rem;
+         display: grid;
+         grid-template-columns: 1fr max-content;
+
+         input{
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+         }
+
+         button{
+            @include Btn2;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            @include F1L;
+         }
+         
+      }
+
+      &__manualBtn{
+         margin-top: 2rem;
+
+         p{
+            @include F1R;
+            font-size: 1.6rem;
+            color: $blue1;
+            text-decoration: underline;
+            cursor: pointer;
+
+            &:hover{
+               transition: all 0.5s ease;
+               color: $oran1;
+            }
+         }
+      }
+
+      .manualAddress{
+         display: none;
+      }
+   }
+} 
+
+.companyInfoWrap{
+   
+   .companyInfo{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 4rem;
+      grid-template-rows: max-content max-content max-content;
+      align-items: end;
+
+      &__heading{
+         grid-column: 1 / span 1;
+         grid-row: 1/ span 1;
+      }
+
+      &__companyType{
+         grid-column: 1 / span 1;
+         grid-row: 2 / span 1;
+      }
+
+      &__companyName{
+         grid-column: 1 / span 1;
+         grid-row: 3 / span 1;
+      }
+
+      &__tradingName{
+         grid-column: 2 / span 1;
+         grid-row: 2 / span 1;
+      }
+
+      &__companyNum{
+         grid-column: 2 / span 1;
+         grid-row: 3 / span 1;
+
+         display: grid;
+         grid-template-columns: 1fr max-content;
+         grid-template-rows: max-content 1fr;
+
+         p{
+            grid-column: 1 / span 2;
+         }
+
+         input{
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+         }
+
+         button{
+            @include Btn2;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            @include F1L;
+         }
+
+         display: none;
+
+      }
+
+      &__newLimited{
+         grid-column: 2 / span 1;
+         grid-row: 3 / span 1;
+
+         display: none;
+      }
+
+
+   }
+}
+
+.selectLocationWrap{
+   .selectLocation{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 4rem;
+      grid-template-rows: max-content max-content ;
+
+      &__heading{
+         grid-column: 1 / span 1;
+         grid-row: 1 / span 1;
+      }
+
+      &__location{
+         grid-column: 1 / span 1;
+         grid-row: 2 / span 1;
+      }
+   }
+}
+
+.createPasswordWrap{
+
+   .createPassword{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 4rem;
+      grid-template-rows: max-content max-content max-content max-content;
+
+      &__heading{
+         grid-column: 1 / span 1;
+         grid-row: 1 / span 1;
+      }
+
+      &__note{
+         grid-column: 1 / span 2;
+         grid-row: 2 / span 1;
+
+         @include F1R;
+         font-size: 1.6rem;
+         color: #979797;
+         margin-top: 2rem;
+      }
+
+      &__pass{
+         grid-column: 1 / span 1;
+         grid-row: 3 / span 1;
+      }
+
+      &__passConfirm{
+         grid-column: 2 / span 1;
+         grid-row: 3 / span 1;
+      }
+
+      &__next{
+         grid-column: 1 / span 2;
+         grid-row: 4 / span 1;
+
+         button{
+            @include Btn2;
+            margin-top: 5rem;
+            margin-left: auto;
+         }
+      }
+   }
+   
+}
+
+//personal details
+@media screen and (max-width: 924px){
+   .personalDetailsWrap{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: max-content  max-content max-content;
+   
+      &__head{
+         padding-left: 4rem;
+         grid-column: 1 / span 1;
+         grid-row: 1 / span 1;
+      }
+   } 
+}
+
+//company info
+//select location
+//create pass
+@media screen and (max-width: 800px){
+   .companyInfoWrap{
+      .companyInfo{
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-column-gap: 4rem;
+         grid-template-rows: max-content max-content max-content max-content max-content;
+         
+
+         &__heading{
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+         }
+
+         &__companyType{
+            grid-column: 1 / span 1;
+            grid-row: 2/ span 1;
+         }
+   
+         &__companyName{
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 1;
+         }
+   
+         &__tradingName{
+            grid-column: 1 / span 1;
+            grid-row: 4 / span 1;
+         }
+   
+         &__companyNum{
+            grid-column: 1 / span 1;
+            grid-row: 5 / span 1;
+         }
+
+         &__newLimited{
+            grid-column: 1 / span 1;
+            grid-row: 5 / span 1;
+         }
+   
+         
+      }
+   }
+
+   .selectLocationWrap{
+      .selectLocation{
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: max-content max-content ;
+   
+         &__heading{
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+         }
+   
+         &__location{
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+         }
+      }
+   }
+
+   .createPasswordWrap{
+
+      .createPassword{
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: max-content max-content max-content max-content max-content;
+   
+         &__heading{
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+         }
+   
+         &__note{
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+         }
+   
+         &__pass{
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 1;
+         }
+   
+         &__passConfirm{
+            grid-column: 1 / span 1;
+            grid-row: 4 / span 1;
+         }
+
+         &__next{
+            grid-column: 1 / span 1;
+            grid-row: 5 / span 1;
+         }
+      }
+      
+   }
+}
+
+
+//personal details
+// cart 2 section 
+// header
+@media screen and (max-width: 500px){
+   .cart2-Section{
+      padding: 1.5rem;
+   }
+
+   .additionalDetailsHeader{
+      padding: 1.5rem;
+   }
+
+   .personalDetailsWrap{
+
+      &__head{
+         padding-left: 1.5rem;
+      }
+   
+      .personalDetails{
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: max-content 1fr 1fr 1fr 1fr 1fr;
+   
+         &__heading{
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+         }
+   
+         &__fName{
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+         }
+   
+         &__lName{
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 1;
+         }
+   
+         &__email{
+            grid-column: 1 / span 1;
+            grid-row: 4 / span 1;
+         }
+   
+         &__phone{
+            grid-column: 1 / span 1;
+            grid-row: 5 / span 1;
+         }
+   
+         &__mobile{
+            grid-column: 1 / span 1;
+            grid-row: 6 / span 1;
+         }
+      }
+   
+      .personalAddress{   
+         &__postCode{
+            display: block;
+   
+            input{
+               border-top-right-radius: 6px;
+               border-bottom-right-radius: 6px;
+            }
+   
+            button{
+               @include Btn2;
+               border-top-left-radius: 5px;
+               border-bottom-left-radius: 5;
+               @include F1L;
+
+               width: 100%;
+               margin-top: 1rem;
+            }
+            
+         }
+         
+         
+      }
+   }
+   
+}
+
+

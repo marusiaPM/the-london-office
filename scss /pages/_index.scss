@@ -1,0 +1,264 @@
+body{
+    background-color: $white;
+}
+
+// HOW OUR SERVICES WORK 
+.howServicesWorkWrapper{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    &__h1{
+        @include sectionHeading;
+    } 
+}
+
+.howServicesWork{
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+    justify-items: stretch;
+    align-items: stretch;
+
+    &__col{  
+        display: grid;
+        grid-template-rows: 10rem max-content 1fr;
+        grid-row-gap: 3rem;
+        justify-items: center;
+
+        img{
+            width: 7rem;
+        }
+
+        h2{
+            @include F1R;
+            font-size: 2rem;
+            color: $blue1;
+        }
+
+        p{
+            @include P2;
+            text-align: center;
+        }
+    }
+}
+
+
+//3 EASY STEPS
+.stepsWrapper{
+    padding-bottom: 6rem;
+
+    &__h1{
+        @include sectionHeading;
+        margin-bottom: 6rem !important;
+    } 
+
+    .steps{
+        padding: 5rem 0;
+
+        background-image:
+                        linear-gradient(0deg, rgba(44, 59, 88, 0.5), rgba(44, 59, 88, 0.5)),
+                        url('../img/3St.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+
+        &__content{
+            @include Flex1;
+            align-items: flex-start;
+        }
+
+        &__col{
+            width: 31%;
+        }
+
+        &__img{
+            display: block;
+            width: 7rem;
+            margin: auto;
+            margin-bottom: 2rem;
+        }
+
+        &__h2{
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 2rem;
+            @include F1B;
+            font-size: 2rem;
+            color: $white;
+        }
+
+        &__p{
+            @include P2;
+            text-align: center;
+            color: $white;
+        }
+
+    }
+}
+    
+
+//OUR APPS
+.ourAppsWrapper{
+    padding-bottom: 6rem;
+
+    .ourApps{
+        @include Flex1;
+    }
+
+    // LEFT SIDE 
+    .ourAppsLeft{
+        width: 28%;
+        max-width: 42rem;
+
+        &__h1{
+            @include F1M;
+            font-size: 2.9rem;
+            line-height: 140%;
+            color: $blue1;
+            margin-bottom: 3rem;
+        }
+
+        &__h2{
+            @include P2;
+            color: $black;
+            font-size: 1.8rem;
+            line-height: 160%;
+            margin-bottom: 5rem;
+        }
+
+        &__links{
+            @include Flex1;
+            max-width: 32rem;
+            a{
+                margin-bottom: 1rem;
+                img{
+                    width: 15rem;
+                }
+            }
+        }
+    }
+
+    // RIGHT SIDE 
+    .ourAppsRight{
+        width: 70%;
+    }
+}
+
+//TRUSTED & PROF
+.trustedWrapper{
+    padding-bottom: 6rem;
+    &__h1{
+        @include sectionHeading;
+        margin-bottom: 6rem !important;
+    } 
+}
+
+//FAQs
+.faqWrapper{
+    padding: 6rem 0;
+
+    &__h1{
+        @include sectionHeading;
+    } 
+
+    &__h2{
+        @include sectionSubHeading;
+    }
+
+    &__a{
+        @include Btn2;
+        margin: 5rem auto 0;
+    }
+}
+
+//Apps
+@media screen and (max-width: 1100px){
+    //OUR APPS
+.ourAppsWrapper{
+    padding-bottom: 6rem;
+
+    .ourApps{
+        @include Flex1;
+    }
+
+    // LEFT SIDE 
+    .ourAppsLeft{
+        width: 100%;
+        max-width: 42rem;
+        margin: auto;
+        margin-bottom: 2rem;
+
+    }
+
+    // RIGHT SIDE 
+    .ourAppsRight{
+        width: 100%;
+    }
+}
+}
+
+// How services work //3 steps //FAQs
+@media screen and (max-width: 900px){
+    .howServicesWork{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stepsWrapper{
+        .steps{
+            &__col{
+                width: 80%;
+                margin: 1rem auto;
+            }
+        }
+    }
+
+
+    .faqWrapper{
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content;
+    
+        &__h1{
+            @include H3;
+            width: fit-content;
+            margin: auto;
+        }
+    
+        &__p{
+            @include P1;
+            width: fit-content;
+            max-width: 90%;
+            margin: auto;
+            margin-bottom: 6rem;
+            text-align: center;
+        }
+    
+        &__left{
+            grid-row: 1 / span 1;
+            grid-column: 1 / span 1;
+            padding: 6rem 0rem 6rem 0 ;
+        }
+    
+        &__right{
+            display: none;
+        }
+    }
+}
+
+// How services work
+@media screen and (max-width: 600px){
+    .howServicesWork{
+        grid-template-columns: 1fr;
+
+        &__col{  
+            display: grid;
+            grid-template-rows: max-content max-content max-content;
+            grid-row-gap: 2rem;
+        }
+    }
+}

@@ -1,0 +1,381 @@
+//_________MODALS_______
+
+// ALL MODAL CONTAINERS 
+.modalContainer{
+    z-index: 20000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    max-height: fit-content;
+    overflow: scroll;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(44, 59, 88, 0.4);
+
+    transition: all 2s ease-in 1s;
+}
+
+.modal{
+    background-color: white;
+    padding: 3rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.4);
+    margin: 2rem;
+
+
+    &__head{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        h1{
+            @include F1B;
+            color: $blue1;
+            font-size: 2rem;
+            margin-bottom: 5rem;
+            line-height: 160%;
+        }
+
+        i{
+            color: $oran1;
+            font-size: 2rem;
+            transition: all 0.5s ease;
+            margin-left: 5rem;
+
+            &:hover{
+                color: $blue1;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__head2{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        i{
+            color: $oran1;
+            font-size: 2rem;
+            transition: all 0.5s ease;
+            
+            margin-bottom: 3rem;
+
+            &:hover{
+                color: $blue1;
+                cursor: pointer;
+            }
+        }
+
+        h1{
+            @include F1B;
+            color: $blue1;
+            font-size: 2rem;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 3rem;
+            line-height: 160%;
+        }
+    }
+}
+
+.closeModal{
+    display: none;
+}
+
+.openModal{
+    display: flex;
+
+    .modal{
+        @include slideD-1000px;
+    }
+    
+}
+
+// LOG IN MODAL 
+.logInModal{
+    width: 100%;
+    max-width: 40rem;
+
+    .forgottenPassBtn{
+        text-decoration: none;
+        @include F1B;
+        color: $oran1;
+        font-size: 1.6rem;
+        transition: all 0.5s ease;
+
+            &:hover{
+                color: $blue1;
+                cursor: pointer;
+            }
+    }
+
+    .logInSubmit{
+        width: 100%;
+    }
+}
+
+//FORGOTTEN PASS MODAL
+.forgottenPassModal{
+
+    .backToLogInBtn{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        @include F1B;
+        color: $blue1;
+        font-size: 1.4rem;
+        transition: all 0.5s ease;
+
+            &:hover{
+                color: $oran1;
+                cursor: pointer;
+            }
+
+            i{
+                color: $oran1;
+                font-size: 1.6rem;
+                margin-right: 1rem;
+            }
+    }
+}
+
+//10% OFF MODAL
+.discountModal{
+    width: 100%;
+    max-width: 70rem; 
+
+    input{
+        width: 100%;
+        max-width: 50rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3rem;
+    }
+
+    button{
+        @include Btn2;
+        margin: 0 auto 3rem auto;
+    }
+
+    p{
+        @include P2;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    &__noThanks{
+        width: fit-content;
+        margin: auto;
+        @include F1M;
+        font-size: 2rem;
+        color: $oran1;
+        transition: all 0.5s ease;
+        text-decoration: underline;
+
+        &:hover{
+            color: $blue1;
+            cursor: pointer;
+        }
+
+    }
+}
+
+//FREE COMPANY F MODAL
+.freeCompanyFModal{
+    width: 100%;
+    max-width: 70rem; 
+
+    p{
+        @include P2;
+        text-align: center; 
+        margin-bottom: 3rem;
+    }
+
+    &__btns{
+        @include Flex1;
+        width: 100%;
+        max-width: 43rem;
+        margin: 5rem auto 0;
+    }
+
+    &__btn{
+        display: block;
+        width: 20rem;
+        @include Flex1;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        @include F1M;
+        color: $white;
+        font-size: 2rem;
+        padding: 1rem 1rem;
+        border-radius: 5px;
+
+        cursor: pointer;
+
+        i{
+            font-size: 1.9rem;
+            margin-right: 2rem;
+        }
+
+        &--no{
+            background-color: $red1;
+            border: 2px solid $red1;
+        }
+
+        &--yes{
+            background-color: $oran1;
+            border: 2px solid $oran1;
+        }
+
+        transition: all 0.5s ease;
+
+        &:hover{
+            cursor: pointer;
+            border-color: $blue1;
+            background-color: $blue1;
+            color: $white;
+        }
+    }
+}
+
+//PORTLAND STREET MAP 
+.bookMeetingRoomModal{
+    .modal{
+        max-width: 62rem;
+    }
+    &__head{
+        @include Flex1;
+        flex-wrap: nowrap;
+        margin-bottom: 3rem;
+
+        h1{
+            @include F1R;
+            color: $blue1;
+            font-size: 3rem;
+        }
+
+        i{
+            color: $oran1;
+            font-size: 2rem;
+            transition: all 0.5s ease;
+            margin-left: 1rem;
+
+            &:hover{
+                color: $blue1;
+                cursor: pointer;
+            }
+        }
+    }
+
+    p{
+        @include P2;
+        margin-bottom: 3rem; 
+    }
+}
+
+.meetingRoomMapModal{
+    &__close{
+        width: fit-content;
+        margin-left: auto;
+        @include Flex1;
+
+        p{
+            @include P2;
+            color:  $blue1;
+            transition: all ease-in 0.5s;
+        }
+        i{
+            color: $oran1;
+            font-size: 2rem;
+            margin-left: 2rem;
+        }
+
+        &:hover{
+            cursor: pointer;
+            p{
+                color: $oran1;
+            }
+        }
+    }
+    &__h1{
+        @include F1B;
+        font-size: 2.2rem;
+        color: $oran1;
+        text-align: center;
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+
+    &__p1{
+        @include P2;
+        text-align: center;
+        max-width: 45rem;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+
+    &__p2{
+        @include P2;
+        text-align: center;
+        color: $oran1;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+
+    &__map{
+        position: initial;
+        text-align: right;
+        height: 40rem;
+        width: 80rem;
+        max-width: 100%;
+
+        .gmap_canvas {
+            overflow:hidden;
+            background:none!important;
+            height:400px;
+            width:100%;
+        }
+    }
+
+}
+
+
+// OUR LOCATIONS 
+.locationMapModal{
+    width: 80rem;
+    max-width: 100%;
+
+    &__p{
+        @include P2;
+        text-align: center;
+        color: $oran1;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+
+    &__map{
+        position: initial;
+        text-align: right;
+        height: 40rem;
+
+        .gmap_canvas {
+            overflow:hidden;
+            background:none!important;
+            height:400px;
+            width:100%;
+        }
+    }
+}

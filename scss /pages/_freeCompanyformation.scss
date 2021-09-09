@@ -1,0 +1,25 @@
+.freeCompanyFormationIntro{
+   padding: 6rem 0;
+
+   p{
+      @include P2;
+      font-size: 1.8rem;
+      line-height: 180%;
+      margin-bottom: 6rem;
+   }
+
+   a{
+      @include P2;
+      font-size: 1.8rem;
+      line-height: 180%;
+      transition: all 0.5s ease;
+      text-decoration: none;
+      color: $oran1;
+
+      &:hover{
+         color: $blue1;
+      }
+   }
+
+}
+

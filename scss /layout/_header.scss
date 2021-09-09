@@ -1,0 +1,305 @@
+.header{ 
+    display: grid;
+    height: fit-content;
+    grid-template-columns: 8.5rem 1fr 8.5rem;
+    grid-template-rows: 6rem 10rem max-content;
+
+} 
+
+.navigation{
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+
+    z-index: 5;
+}
+
+.headerSliderContainer{
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 2;
+}
+
+
+// HEADER SMALLER 
+.header2{
+    display: grid;
+    height: fit-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 10rem max-content;
+
+    .navigation{
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+    
+        z-index: 5;
+    }
+
+    .header2Content{
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 2;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        &--regOffice{ 
+            background-image:   linear-gradient(0deg, rgba(44, 59, 88, 0.9), rgba(44, 59, 88, 0.9)),
+                                url('../img/banners/roa.png');
+        }
+
+        &--DSA{
+            background-image:   linear-gradient(0deg, rgba(44, 59, 88, 0.9), rgba(44, 59, 88, 0.9)),
+                                url('../img/banners/dsa.png');
+        }
+
+        &--VBA{
+            background-position: center center;
+            background-image:   linear-gradient(0deg, rgba(44, 59, 88, 0.9), rgba(44, 59, 88, 0.9)),
+                                url('../img/banners/vba.png');
+        }
+
+        &--VBP{
+            background-image:   linear-gradient(0deg, rgba(44, 59, 88, 0.9), rgba(44, 59, 88, 0.9)),
+                                url('../img/banners/vbp.png');
+        }
+
+        &--teleAnswering{
+            background-image:   linear-gradient(0deg, rgba(44, 59, 88, 0.9), rgba(44, 59, 88, 0.9)),
+                                url('../img/banners/tas.png');
+        }
+
+        &--CF{
+            background-image:   linear-gradient(0deg, rgba(44, 59, 88, 0.9), rgba(44, 59, 88, 0.9)),
+                                url('../img/banners/cf.png');
+        }
+
+        &--MR{
+            background-image:   linear-gradient(0deg, rgba(44, 59, 88, 0.9), rgba(44, 59, 88, 0.9)),
+                                url('../img/banners/meeting-rooms.png');
+        }
+
+        &--VBA-TAS{
+            background-image:   linear-gradient(0deg, rgba(44, 59, 88, 0.9), rgba(44, 59, 88, 0.9)),
+                                url('../img/banners/vba-tas.png');
+        }
+
+        &--VBP-TAS{
+            background-image:   linear-gradient(0deg, rgba(44, 59, 88, 0.9), rgba(44, 59, 88, 0.9)),
+                                url('../img/banners/vbp-tas.png');
+        }
+
+        &--VBP-web{
+            background-image:   linear-gradient(0deg, rgba(44, 59, 88, 0.9), rgba(44, 59, 88, 0.9)),
+                                url('../img/banners/vbp-web.png');
+        }
+
+        &--VBP-legal{
+            background-image:   linear-gradient(0deg, rgba(44, 59, 88, 0.9), rgba(44, 59, 88, 0.9)),
+                                url('../img/banners/vbp-legal.png');
+        }
+
+        &--aboutUs{
+            background-image:   linear-gradient(0deg, rgba(3, 41, 77, 0.9), rgba(3, 41, 77, 0.9)),
+            url('../img/banners/about.png');
+
+            .header2ContentInner{
+                min-height: 33rem;
+            }
+        }
+
+        &--makePayment{
+            background-image:   linear-gradient(0deg, rgba(44, 59, 88, 0.9), rgba(44, 59, 88, 0.9)),
+                                url('../img/banners/cart.png');
+
+            .header2ContentInner{
+                min-height: 33rem;
+            }
+        }
+
+        &--cart1{ 
+            background-image:   linear-gradient(0deg, rgba(44, 59, 88, 0.9), rgba(44, 59, 88, 0.9)),
+                                url('../img/banners/cart.png');
+        }
+
+        &--cart2{ 
+            background-image:   linear-gradient(0deg, rgba(44, 59, 88, 0.9), rgba(44, 59, 88, 0.9)),
+                                url('../img/banners/cart.png');
+        }
+
+        &--cart3{ 
+            background-image:   linear-gradient(0deg, rgba(44, 59, 88, 0.9), rgba(44, 59, 88, 0.9)),
+                                url('../img/banners/cart.png');
+        }
+
+        &--thankYou{
+            background-image:   linear-gradient(0deg, rgba(44, 59, 88, 0.9), rgba(44, 59, 88, 0.9)),
+                                url('../img/banners/cart.png');
+
+            .header2ContentInner{
+                min-height: 33rem;
+            }
+        }
+
+        &--pricing{
+            background-image:   linear-gradient(0deg, rgba(44, 59, 88, 0.9), rgba(44, 59, 88, 0.9)),
+                                url('../img/banners/pricing.png');
+
+            .header2ContentInner{
+                min-height: 33rem;
+            }
+        }
+
+
+        &--locations{
+            background-position: center top;
+            background-image:   linear-gradient(0deg, rgba(3, 41, 77, 0.9), rgba(3, 41, 77, 0.9)),
+                                url('../img/banners/locations.png');
+
+            .header2ContentInner{
+                min-height: 33rem;
+            }
+        }
+
+        &--partners{
+            background-image:   linear-gradient(0deg, rgba(3, 41, 77, 0.9), rgba(3, 41, 77, 0.9)),
+                                url('../img/banners/partners.png');
+
+            .header2ContentInner{
+                min-height: 33rem;
+            }
+        }
+
+        &--apps{
+            background-image:   linear-gradient(0deg, rgba(3, 41, 77, 0.9), rgba(3, 41, 77, 0.9)),
+                                url('../img/banners/app.png');
+
+            .header2ContentInner{
+                min-height: 33rem;
+            }
+        }
+
+        &--faq{
+            background-image:   linear-gradient(0deg, rgba(3, 41, 77, 0.9), rgba(3, 41, 77, 0.9)),
+                                url('../img/banners/faq.png');
+
+            .header2ContentInner{
+                min-height: 33rem;
+            }
+        }
+
+
+        &--blog{
+            background-position: center top;
+            background-image:   linear-gradient(0deg, rgba(3, 41, 77, 0.9), rgba(3, 41, 77, 0.9)),
+                                url('../img/london4.png');
+
+            .header2ContentInner{
+                min-height: 33rem;
+            }
+        }
+
+        &--contactUs{
+            background-position: center top;
+            background-image:   linear-gradient(0deg, rgba(3, 41, 77, 0.9), rgba(3, 41, 77, 0.9)),
+                                url('../img/banners/contact.png');
+
+            .header2ContentInner{
+                min-height: 33rem;
+            }
+        }
+    }
+
+    .header2ContentInner{
+        padding: 14rem 0 4rem;
+        @include Flex1;
+
+        &__h1{
+            @include F1R;
+            color: $white;
+            font-size: 4rem;
+            line-height: 200%;
+        }
+
+        &__h2{
+            width: 100%;
+            @include F1R;
+            color: $white;
+            font-size: 2.2rem;
+            line-height: 100%;
+        }
+
+        &__price{
+            display: block;
+            width: 15rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .header2{
+
+        .header2ContentInner{
+    
+            &__h1{
+                @include F1R;
+                color: $white;
+                font-size: 3rem;
+                line-height: 200%;
+            }
+
+            &__h2{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .header2{
+
+        .header2ContentInner{
+    
+            &__h1{
+                @include F1R;
+                color: $white;
+                font-size: 2rem;
+                line-height: 200%;
+            }
+            &__h2{     
+                font-size: 1.6rem;
+;
+            }
+    
+            &__price{
+                display: block;
+                width: 10rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .header2{ 
+
+        .header2ContentInner{
+            display: block;
+            &__h1{
+                width: 90%;
+                text-align: center;
+                margin: auto;
+                margin-bottom: 2rem;
+            }
+
+            &__h2{
+                width: 90%;
+                text-align: center;
+                margin: auto;
+            }
+    
+            &__price{
+                margin: auto;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,106 @@
+//////BUTTONS////////
+// white text, white border, transperant , on hover orange 
+@mixin Btn1 {
+    display: block; 
+    text-decoration: none;
+    @include F1B;
+    font-size: 1.6rem;
+    color: $white;
+    padding: 2rem 3rem 2rem 3rem !important;  
+    border: 2px solid $white;
+    border-radius: 5px;
+
+    &:hover{
+        border-color: $oran1; 
+        background-color: $oran1;
+    }
+}
+
+// white text, orange back, on hover blue and white text 
+@mixin Btn2 {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    @include F1R;
+    line-height: 100%;
+    font-size: 1.8rem;
+    color: $white;
+    background-color: $oran1;
+    padding: 1rem 2.2rem;  
+    border: 2px solid $oran1;
+    border-radius: 5px;
+    transition: all 1s ease;
+
+    &:hover{
+        cursor: pointer;
+        border-color: $blue1;
+        background-color: $blue1;
+        color: $white;
+    }
+}
+
+// white text, white border, transperant , on hover blue
+//Link - white text and border 1.6rem
+@mixin Btn3 {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    @include F1M;
+    font-size: 1.6rem;
+    color: $white;
+    padding: 1rem 2rem;  
+    border: 2px solid $white;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+
+    &:hover{
+        border-color: $blue1;
+        background-color: $blue1;
+    }
+}
+
+// white text, orange , on hover orange text white back
+@mixin Btn4 {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    @include F1R;
+    line-height: 100%;
+    font-size: 1.8rem;
+    color: $white;
+    background-color: $oran1;
+    padding: 1rem 2.2rem;  
+    border: 2px solid $oran1;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+
+    &:hover{
+        cursor: pointer;
+        border-color: $white;
+        background-color: $white;
+        color: $oran1;
+    }
+}
+
+//blue with white text, on hover blue border and text, transparent back
+@mixin Btn5 {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    @include F1R;
+    line-height: 100%;
+    font-size: 1.8rem;
+    color: $white;
+    background-color: $blue1;
+    padding: 1rem 2.2rem;  
+    border: 2px solid $blue1;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+
+    &:hover{
+        cursor: pointer;
+        border-color: $blue1;
+        background-color: transparent;
+        color: $blue1;
+    }
+}

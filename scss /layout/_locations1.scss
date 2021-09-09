@@ -1,0 +1,170 @@
+.locations1Wrapper{
+   &__h1{
+      @include sectionHeading;
+   }  
+
+   &__h2{
+      @include sectionSubHeading;
+   }
+
+   &__btn{
+      display: block;
+      margin: auto;
+      margin-top: 4rem;
+      @include Btn2;
+   }
+}
+
+.locations1Thumbs{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+
+   .locations1Thumb{
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      padding: 6rem 1rem;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      h2{
+         @include F1B;
+         font-size: 1.8rem;
+         color: $white;
+         margin-bottom: 1rem;
+      }
+
+      &__p{
+         @include P2;
+         color: $white;
+         text-align: center;
+         margin-bottom: 4rem;
+      }
+   
+      &__btn{
+         @include Flex1;
+   
+         background-color: $oran1;
+         padding: 1.5rem 1.5rem;
+         box-shadow: 0px 4px 4px rgba(3, 41, 77, 0.2);
+         border-radius: 6px;
+   
+         @include P1;
+         color: $white;
+   
+         i{
+            font-size: 2rem;
+            margin-right: 1.5rem;
+         }
+   
+         &:hover{
+            cursor: pointer;
+            background-color: $blue1;
+         }
+      }
+
+      &--1{
+         background-image:
+                        linear-gradient(0deg, rgba(44, 59, 88, 0.5), rgba(44, 59, 88, 0.5)),
+                        url('../img/location1.png');
+      }
+
+      &--2{
+         background-image:
+                        linear-gradient(0deg, rgba(44, 59, 88, 0.5), rgba(44, 59, 88, 0.5)),
+                        url('../img/location3.png');
+      }
+
+      &--3{
+         background-image:
+                        linear-gradient(0deg, rgba(44, 59, 88, 0.5), rgba(44, 59, 88, 0.5)),
+                        url('../img/location2.png');
+      }
+
+   }
+
+}
+
+.locations1Maps{
+   .locations1Map{
+      width: 100%;
+
+         .mapouter{position:relative;text-align:right;height:500px;width:100%;}
+         .gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}
+
+         &--visible{
+               display: block;
+               @include slideD-50px;
+         }
+         &--hidden{
+               display: none;
+         }
+   }
+}
+
+@media screen and (max-width: 850px){
+   .locations1Thumbs{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+   
+      .locations1Thumb{
+         
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+   
+         padding: 2rem 1rem;
+   
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center center;
+   
+         h2{
+            @include F1B;
+            font-size: 1.6rem;
+            color: $white;
+            margin-bottom: 1rem;
+         }
+   
+         &__p{
+            @include P2;
+            color: $white;
+            text-align: center;
+            margin-bottom: 2rem;
+         }
+      
+         &__btn{
+            @include Flex1;
+      
+            background-color: transparent;
+            padding:0 ;
+            box-shadow: none;
+            border-radius: 0;
+      
+            @include P1;
+            color: $white;
+      
+            i{
+               font-size: 2rem;
+               margin-right: 1.5rem;
+            }
+      
+            &:hover{
+               cursor: pointer;
+               background-color: transparent;
+               color: $oran1;
+            }
+         }
+   
+      }
+   
+   }
+}

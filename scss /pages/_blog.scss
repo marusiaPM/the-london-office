@@ -1,0 +1,423 @@
+//BLOG PAGE CONTENT WRAPPER
+.blogWrapper{
+   padding: 6rem 0;
+
+   display: grid;
+   grid-template-rows: max-content 1fr;
+   grid-template-columns: 2fr 1fr;
+   grid-column-gap: 4rem;
+   justify-items: stretch;
+   align-items: start;
+
+   &__h1{
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 1;
+
+      @include H4;
+      margin-bottom: 6rem; 
+   }
+}
+
+// LATES POSTS WRAP 
+.latestPostsWrap{
+   grid-column: 1 / span 1;
+   grid-row: 2 / span 1;
+
+   .latestPosts{
+      display: block;
+
+      .postIntro{
+         background-color: $white;
+         padding: 4rem 0;
+
+         &:first-child{
+            padding-top: 0;
+         }
+
+         &:last-child{
+            padding-bottom: 0;
+         }
+
+         &__heading{
+            @include F1M;
+            font-size: 2.2rem;
+            line-height: 160%;
+            color: $blue1;
+            margin-bottom: 1rem;
+         }
+
+         &__date{
+            @include F1M;
+            font-size: 1.6rem;
+            line-height: 160%;
+            color: $grey6;
+            margin-bottom: 1rem;
+            margin-right: 2rem;
+            display: inline-block;
+         }
+
+         &__author{
+            @include F1M;
+            font-size: 1.6rem;
+            line-height: 160%;
+            color: $grey6;
+            margin-bottom: 2rem;
+            display: inline-block;
+
+            span{
+               @include F1M;
+               font-size: 1.6rem;
+               line-height: 160%;
+               color: $grey6;
+               margin-bottom: 1rem;
+               display: inline-block;
+
+               a{
+                  text-decoration: none;
+                  @include F1M;
+                  font-size: 1.6rem;
+                  line-height: 160%;
+                  color: $grey6;
+               }
+            }
+         }
+
+         &__image{
+            position: relative;
+            width: 100%;
+            height: 32rem;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+            margin-bottom: 5rem;
+            
+            img{
+               display: block;
+               object-fit: cover;
+               width: 100%;
+               max-width: 100%;
+               height: 100%;
+               max-height: 100%;
+            }
+
+            .imageOverlay{
+               position: absolute;
+               top: 0;
+               left: 0;
+               background:  linear-gradient(0deg, rgba(44, 59, 88, 0.5), rgba(44, 59, 88, 0.5));
+               width: 100%;
+               height: 100%;
+            }
+         }
+
+         &__intro{
+            margin-bottom: 2rem;
+            p{
+               @include P1;
+               
+            }
+         }
+
+         &__readMore{
+            @include Btn2;
+         }
+      }
+   }
+
+   .blogPagination{
+      padding: 3rem 0;
+
+      a{
+         @include F1R;
+         font-size: 2rem;
+         color: $oran1;
+         text-decoration: none;
+   
+         transition: all 0.5s ease;
+   
+         &:hover{
+            cursor: pointer;
+            color: $blue1;
+         }
+      }
+   }
+}
+
+//BLOG POST 
+.blogPostWrap{
+   grid-column: 1 / span 1;
+   grid-row: 2 / span 1;
+
+   .blogPost{
+      &__heading{
+         @include F1M;
+         font-size: 2.2rem;
+         line-height: 160%;
+         color: $blue1;
+         margin-bottom: 1rem;
+      }
+
+      &__date{
+         @include F1M;
+         font-size: 1.6rem;
+         line-height: 160%;
+         color: $grey6;
+         margin-bottom: 1rem;
+         margin-right: 2rem;
+         display: inline-block;
+      }
+
+      &__author{
+         @include F1M;
+         font-size: 1.6rem;
+         line-height: 160%;
+         color: $grey6;
+         margin-bottom: 2rem;
+         display: inline-block;
+
+         span{
+            @include F1M;
+            font-size: 1.6rem;
+            line-height: 160%;
+            color: $grey6;
+            margin-bottom: 1rem;
+            display: inline-block;
+         }
+      }
+
+      &__content{
+         p{
+            @include P1;
+            margin-bottom: 3rem;
+         }
+
+         img{
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            max-height: 100%;
+         }
+
+         a{
+            @include F1R;
+            font-size: 1.6rem;
+            color: $oran1;
+            text-decoration: none;
+
+            transition: all 0.5s ease;
+
+            &:hover{
+               cursor: pointer;
+               color: $blue1;
+            }
+         }
+
+         ul{
+            list-style-type:circle;
+            
+            li{
+               @include P1;
+            }
+         }
+
+         h1{
+            @include F1B;
+            font-size: 2rem;
+            color: $oran1;
+         }
+
+         h2{
+            @include F1M;
+            font-size: 1.8rem;
+            color: $oran1;
+         }
+
+         h3 h4 h5 h6{
+            @include F1M;
+            font-size: 1.6rem;
+            color: $blue1;
+         }
+      }
+
+      &__goBack{
+         @include Btn2;
+      }
+   }
+}
+
+//BLOG SIDE SECTION
+.blogSideSectionWrap{
+   grid-column: 2 / span 1;
+   grid-row: 2 / span 1;
+
+   padding: 4rem 2rem;
+   background-color: $grey7;
+
+   //search 
+   .blogSearch{
+      margin-bottom: 5rem;
+
+      &__h{
+         @include H4;
+         font-size: 2.4rem; 
+
+         &:after{
+            border-bottom-width: 2px;
+            margin-top: 0;
+         }
+      }
+
+      &__input{
+         background-color: white;
+      }
+   }
+
+   //recent posts
+   .recentBlogPosts{
+      margin-bottom: 5rem;
+
+      &__h{
+         @include H4;
+         font-size: 2.4rem; 
+
+         &:after{
+            border-bottom-width: 2px;
+            margin-top: 0;
+         }
+      }
+
+      &__link{
+         display: block;
+         @include P1;
+         color: $blue1;
+         text-decoration: none;
+         transition: all 0.4s ease;
+
+         &:hover{
+            color: $oran1;
+         }
+
+         &:not(:last-child){
+            &:after{
+               content:'';
+               display:block;
+               width: 100%;
+               height:0;
+               margin: 1.5rem 0 3rem 0;
+               border-bottom: 1px solid #E5E5E5;
+            }
+         }
+      }
+   }
+
+   // other services 
+   .otherServices{
+      margin-bottom: 5rem;
+
+      &__h{
+         @include H4;
+         font-size: 2.4rem; 
+
+         &:after{
+            border-bottom-width: 2px;
+            margin-top: 0;
+         }
+      }
+
+      &__service{
+         width: 100%;
+         height: fit-content;
+         padding: 2rem;
+
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-image:   linear-gradient(0deg, rgba(44, 59, 88, 0.4), rgba(44, 59, 88, 0.4)),
+                              url('../img/rand1.png');
+
+
+         h3{
+            @include F1B;
+            font-size: 2.2rem;
+            line-height: 160%;
+            color: $white;
+            margin-bottom: 2rem;
+         }
+
+         img{
+            display: block;
+            width: 100%;
+            max-width: 16rem;
+            margin-bottom: 3rem;
+         }
+
+         a{
+            @include Btn3;
+         }
+      }
+   }
+
+   //tags
+   .tagsWrap{
+      &__h{
+         @include H4;
+         font-size: 2.4rem; 
+
+         &:after{
+            border-bottom-width: 2px;
+            margin-top: 0;
+         }
+      }
+
+      .tags{
+         display: flex;
+         flex-wrap: wrap;
+         //justify-content: center;
+      }
+
+      .tag{
+         text-decoration: none;
+         @include P1;
+         padding: 1rem;
+         border: 1px solid $black;
+         text-align: center;
+         transition: all 0.4s ease;
+         margin: 0.5rem;
+
+         &:hover{
+            color: $oran1;
+            border-color: $oran1;
+         }
+      }
+   }
+}
+
+
+@media screen and (max-width: 950px){
+   .blogWrapper{
+      grid-template-rows: max-content max-content max-content;
+      grid-template-columns: 1fr;
+
+      &__h1{
+         grid-column: 1 / span 1;
+         grid-row: 1 / span 1;
+      }
+   }
+
+   .latestPostsWrap{
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+   }
+
+   .blogPostsWrap{
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+   }
+
+   .blogSideSectionWrap{
+      grid-column: 1 / span 1;
+      grid-row: 3 / span 1;
+
+      margin-top: 6rem;
+   }
+}

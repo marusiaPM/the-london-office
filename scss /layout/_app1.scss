@@ -1,0 +1,323 @@
+.phoneApp{
+   height: fit-content; 
+
+   background-image: url('../img/locationPin.svg');
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: right top;
+   
+
+   display: grid;
+
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+   // PHONE IMAGE 
+   &__phone{
+      grid-row: 3 / span 18;
+      grid-column: 2 / span 16;
+
+      width: 100%;
+      object-fit: cover;
+   }
+
+   //DOTS
+   &__dot{
+      color: $blue1;
+      border: 2px solid white;
+      background-color: white;
+      padding: 0;
+      border-radius: 50%;
+      font-size: 1.4rem;
+      z-index: 4;
+      @include pulse-fwd;
+      
+
+      &--1{
+         grid-row: 11 / span 1 !important;
+         grid-column: 4 / span 1 !important;
+
+         justify-self: flex-start;
+         align-self: flex-end;
+      }
+
+      &--2{
+         grid-row: 10 / span 1 !important;
+         grid-column: 7 / span 1 !important;
+
+         justify-self: flex-start;
+         align-self: flex-end;
+      }
+
+      &--3{
+         grid-row: 6 / span 1 !important;
+         grid-column: 6 / span 1 !important;
+
+         justify-self: flex-end;
+         align-self: flex-end;
+      }
+
+      &--4{
+         grid-row: 5 / span 1 !important;
+         grid-column: 10 / span 1 !important;
+
+         justify-self: start;
+         align-self: end;
+      }
+
+      &:hover{
+         cursor: pointer;
+      }
+   }
+
+   //INFO BOXES
+   &__box{
+      z-index: 5;
+      transition: all 0.5s ease;
+
+      p{
+         @include P2;
+         text-align: center;
+         padding: 2rem 2rem;
+         box-sizing: border-box;
+         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+         border-radius: 4px;
+         background-color: $blue1;
+         color: $white;
+      }
+
+      &--1{
+         grid-row: 1 / span 10  !important;
+         grid-column: 13 / span 6 !important;
+
+         justify-self: center;
+         align-self: end;
+         display: none;
+
+         @include bounceIn1;
+      }
+
+      &--2{
+         grid-row: 1 / span 9  !important;
+         grid-column: 13 / span 6 !important;
+
+         justify-self: center;
+         align-self: end;
+         display: block;
+
+         @include bounceIn1;
+
+      }
+
+      &--3{
+         grid-row: 1 / span 5  !important;
+         grid-column: 1 / span 6 !important;
+
+         justify-self: center;
+         align-self: end;
+         display: none;
+
+         @include bounceIn1;
+
+      }
+
+      &--4{
+         grid-row: 1 / span 4  !important;
+         grid-column: 15 / span 6 !important;
+
+         justify-self: center;
+         align-self: end;
+         display: none;
+
+         @include bounceIn1;
+
+      }
+   }
+
+   //LINES
+   &__line{
+      display: block;
+      
+
+      &--1{
+         grid-row: 10 / span 2 !important;
+         grid-column: 4 / span 12 !important;
+
+         justify-self: start;
+         align-self: end;
+
+         width: 100%;
+
+         transform:translateY(-5px) !important;
+
+         
+      }
+
+      &--2{
+         grid-row: 9 / span 2 !important;
+         grid-column: 7 / span 9 !important;
+
+         justify-self: start;
+         align-self: end;
+
+         width: 100%;
+
+         transform:translateY(-5px) !important;
+      }
+
+      &--3{
+         grid-row: 4 / span 3 !important;
+         grid-column: 4 / span 3 !important;
+
+         justify-self: end;
+         align-self: end;
+
+         width: 100%;
+
+         transform:translateY(-5px) !important;
+      }
+
+      &--4{
+         grid-row: 4 / span 2 !important;
+         grid-column: 10 / span 8 !important;
+
+         justify-self: start;
+         align-self: end;
+
+         width: 100%;
+
+         transform:translateY(-5px) !important;
+      }
+   }
+
+   //LINE PATHS
+   #appLine1{
+      display: none;
+      stroke-dasharray: 200;
+      stroke-dashoffset: 0;
+      transition: all 0.5s ease;
+      animation:  appLine1 0.7s linear forwards;
+   }
+   @keyframes appLine1{
+      from{
+         stroke-dashoffset: 200;
+      }
+      to{
+         stroke-dashoffset: 0;
+      }
+   }
+
+   #appLine2{
+      display: block;
+      stroke-dasharray: 200;
+      stroke-dashoffset: 0;
+      transition: all 0.5s ease;
+      animation:  appLine2 1s linear forwards;
+   }
+   @keyframes appLine2{
+      from{
+         stroke-dashoffset: 200;
+      }
+      to{
+         stroke-dashoffset: 0;
+      }
+   }
+
+   #appLine3{
+      display: none;
+      stroke-dasharray: 100;
+      stroke-dashoffset: 0;
+      transition: all 0.5s ease;
+      animation:  appLine3 0.4s linear forwards;
+   }
+   @keyframes appLine3{
+      from{
+         stroke-dashoffset: 160;
+      }
+      to{
+         stroke-dashoffset: 200;
+      }
+   }
+
+   #appLine4{
+      display: none;
+      stroke-dasharray: 200;
+      stroke-dashoffset: 0;
+      transition: all 0.5s ease;
+      animation:  appLine4 1s linear forwards;
+   }
+   @keyframes appLine4{
+      from{
+         stroke-dashoffset: 200;
+      }
+      to{
+         stroke-dashoffset: 0;
+      }
+   }
+
+   
+}
+
+@media screen and (max-width: 780px){
+   .phoneApp{
+      //INFO BOXES
+      &__box{
+      
+         p{
+            @include P2;
+            font-size: 1.2rem;
+            padding: 0.6rem
+         }
+   
+         &--1{
+            p{
+               background-color: $white;
+            }
+         }
+   
+         &--2{
+            p{
+               color: white;
+               background-color: $oran1;
+            }
+         }
+   
+         &--3{
+            p{
+               color: white;
+               background-color: #EE8787;
+            }
+         }
+   
+         &--4{
+            p{
+               color: white;
+               background-color: $blue1;
+            }
+         }
+      }     
+   }
+}
+
+@media screen and (max-width: 496px){
+   .phoneApp{
+
+      //DOTS
+      &__dot{
+         display: none !important;
+      }
+
+      &__line{
+         &--2{
+            display: none;
+         }
+      }
+
+      &__box{
+         &--2{
+            display: none;
+         }
+      }
+   }
+}

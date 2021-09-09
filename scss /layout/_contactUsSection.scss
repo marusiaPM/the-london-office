@@ -1,0 +1,82 @@
+
+//CONTACT US
+.contactSectionWrap{
+   background-color: #ECECEC;
+   padding: 6rem 0;
+}
+.contactSection{
+   @include Flex1;
+
+   .contactSectionText{
+      width: 55%;
+      
+
+         &__h{
+            @include H4;
+         }
+   
+         &__p{
+            @include P2;
+            margin-bottom: 3rem;
+
+            &--2{
+               margin-bottom: 0;
+            }
+         }
+   }
+
+   .contactSectionForm{
+      width: 40%;
+      padding: 3rem 3rem 1rem;
+
+      background: #FFFFFF;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+
+      h2{
+         @include F1R;
+         font-size: 2.2rem;
+         color: $black;
+         width: fit-content;
+         margin: auto;
+         margin-bottom: 1rem;
+      }
+
+      p{
+         @include P2;
+         font-size: 1.4rem;
+         text-align: center;
+         width: 90%;
+         margin: auto;
+         margin-bottom: 3rem;
+      }
+   }
+}
+
+@media screen and (max-width: 900px){
+   .contactSection{
+      
+      .contactSectionText{
+         width: 49%;
+      }
+   
+      .contactSectionForm{
+         width: 49%;
+      }
+   }
+}
+
+@media screen and (max-width: 700px){
+   .contactSection{
+      display: block;
+   
+      .contactSectionText{
+         width: 100%;
+         margin-bottom: 3rem;
+      }
+   
+      .contactSectionForm{
+         width: 100%;
+      }
+   }
+}

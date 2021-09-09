@@ -1,0 +1,303 @@
+.footer1Wrapper{
+    background-color:  #2C3B58;
+    padding: 6rem 0; 
+} 
+.footer1{
+    @include Flex1;
+    align-items: flex-start;
+
+    h2{
+        @include F2B;
+        font-size: 2rem;
+        color: $white;
+        margin-bottom: 2rem; 
+    }
+
+    a{
+        display: block;
+        line-height: 240%;
+
+        text-decoration: none;
+        @include F2R;
+        font-size: 1.6rem;
+        color: $white;
+
+        transition: all 0.5s ease;
+
+        &:hover{
+            color: $oran1;
+        }
+    }
+
+    // about us 
+    .footer1AboutUs{
+        width: 38rem;
+
+        // logo 
+        &__logo{
+            width: 25rem;
+            margin-bottom: 3rem;
+        }
+
+        // about us p 
+        &__about{
+            @include P2;
+            color: $white;
+            margin-bottom: 3rem;
+        }
+
+         // social links 
+        &__socials{
+            @include Flex1;
+            margin-bottom: 3rem;
+            width: 12rem;
+
+            i{
+            font-size: 2rem;
+            margin-right: 2rem;
+            color: $white;
+            transition: all 0.5s ease;
+            }
+
+            .fa-linkedin-in:hover{
+            color: #3B5998;
+            }
+            .fa-facebook-f:hover{
+            color: #3B5998;
+            }
+            .fa-twitter:hover{
+            color: #55ACEE;
+            }
+        
+        }
+
+        //app links
+        &__apps{
+            max-width: 35rem;
+            @include Flex1;
+            a{
+                display: block;
+            }
+            img{
+                height: 5rem;
+            }
+        }
+    }
+
+    // services
+    .footer1Services{
+        width: fit-content;
+        &__block{
+            &--1{
+                margin-bottom: 5rem;
+            }
+        }
+    }
+
+    //other links
+    .footer1Links{
+
+        &__row1{
+            @include Flex1;
+            align-items: flex-start;
+        }
+
+        &__ourCompany{
+            width: fit-content;
+            margin-right: 6rem;
+            margin-bottom: 3rem;
+        }
+
+        &__otherLinks{
+            width: fit-content;
+            margin-right: 6rem;
+            margin-bottom: 3rem;
+        }
+
+        &__contactUs{
+            width: fit-content;
+            margin-bottom: 3rem;
+            p{
+                text-decoration: none;
+                @include P2;
+                color: $white;
+                //line-height: 180%;  //240 to be equal to the links
+                color: $white;
+            }
+        }
+
+        &__worldPay{
+            
+            img{
+                display: block;
+                margin-left: auto;
+                width: 25rem;
+            }
+        }
+
+    }
+}
+
+
+.footer2Wrapper{
+    padding: 1rem 0;
+    background-color: #232E44;
+}
+.footer2{
+    @include Flex1;
+    padding: 1rem;
+
+    .footer2Copy{
+        margin-right: 0.8rem;
+
+        p{
+            @include P2;
+            font-size: 13px;
+            color: $white;
+            line-height: 160%;
+        }
+    }
+
+    .footer2Links{
+        @include Flex1;
+        &__link{
+                text-decoration: none;
+                @include P2;
+                font-size: 13px;
+                color: $white;
+        
+                transition: all 0.5s ease;
+        
+                &:hover{
+                    color: $oran1;
+                }
+            
+        }
+
+        &__vl{
+            margin: 1rem 0.8rem;
+            border-left: 1px solid $white;
+            height: 2.1rem;
+        }
+    }
+}
+
+
+.partnersFooterWrap{
+    background-color: #232E44;
+    padding: 2rem 0; 
+
+    .partnersFooter{
+        display: grid;
+        grid-template-columns: max-content max-content max-content max-content max-content max-content;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        justify-content: space-between; 
+        a{  
+            width: fit-content;
+            text-decoration: none;
+
+            img{
+                height: 3.5rem;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .footer1{
+
+        // about us 
+        .footer1AboutUs{
+            width: 100%;
+            margin-bottom: 3rem;
+
+            &__about{
+                width: 100%;
+            }
+
+             // social links 
+            &__socials{
+                max-width: 12rem;
+            }
+    
+            //app links
+            &__apps{
+                max-width: 35rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .partnersFooterWrap{
+        .partnersFooter{
+            a{  
+                img{
+                    height: 3rem;
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 850px){
+    .footer1{
+
+        // about us 
+        .footer1AboutUs{
+            margin-right: 3rem;
+            //max-width: 40rem;
+            width: 30rem;
+        }
+
+        //links
+        .footer1Links{
+            width: 100%;
+
+            &__worldPay{
+            
+                img{
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    .partnersFooterWrap{
+        .partnersFooter{
+            grid-template-columns: max-content max-content max-content;
+        }
+    }
+}
+
+@media screen and (max-width: 650px){
+    .footer1{
+
+        // about us 
+        .footer1AboutUs{
+            width: 100%;
+        }
+
+        .footer1Services{
+            width: 100%;
+            @include Flex1;
+            align-items: flex-start;
+
+            &__block{
+                margin-bottom: 3rem;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 420px){
+    .partnersFooterWrap{
+        .partnersFooter{
+            grid-template-columns: max-content max-content;
+        }
+    }
+}

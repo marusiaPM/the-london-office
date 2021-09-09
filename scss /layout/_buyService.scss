@@ -1,0 +1,237 @@
+.buyService{
+   width: 45rem;
+
+   background-size: cover !important;
+   background-repeat: no-repeat;
+   background-position: center center; 
+
+   //Heading
+   &__h{
+      @include F1R;
+      font-size: 3.2rem;
+      line-height: 160%;
+      color: $white;
+      padding: 7rem 2rem 7rem 2rem;
+   }
+
+   //Angle
+   &__angle{
+            height: 4rem;
+            background-image: url('../img/angle1-2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom center;
+   }
+
+   //Pricing
+   &__pricingBox{
+      @include Flex1;
+      align-content: center;
+      padding: 2rem;
+      background-color:rgba(238, 133, 31, 0.9);
+   }
+   //price
+   &__price{
+      @include F1B;
+      font-size: 4.5rem;
+      width: 100%;
+      color: $white;
+      margin-bottom: 0.5rem;
+      span{
+         @include F1R;
+         font-size: 1.6rem;
+         color: $white;
+      }
+   } 
+   //Only Available
+   &__onlyAvailable{
+      @include F1M;
+      font-size: 1.6rem;
+      color: $white;
+      border: 1px solid $white;
+      border-radius: 5px;
+      padding: 1.4rem 4.3rem;
+   } 
+   //select - period
+   &__select{
+      select{
+         font-size: 1.6rem;
+         @include F1M;
+         color: $white;
+         line-height: 160%;
+
+         padding: .6em 1.4em .5em .8em;
+         width: 20rem;
+         max-width: 90%;
+
+         box-sizing: border-box;
+         margin: 0 auto;
+         border: 1px solid $white !important; 
+         box-shadow: none;
+         border-radius: 5px;
+         outline: none;
+         -moz-appearance: none;
+         -webkit-appearance: none;
+         appearance: none;
+
+         background-color: transparent;
+         background-image: url('../img/downArrow2.png');
+         background-repeat: no-repeat, repeat;
+         background-position: right .7em top 50%, 0 0;
+         background-size: 1.2rem auto, 100%;
+
+         &:focus{
+            cursor: pointer;
+            border: 0,6px solid $white;
+         }
+      }
+
+      option{
+            font-size: 1.6rem;
+            @include F1M;
+            color: $black;
+      }
+   }
+   // buy now btn
+   &__buyBtn{
+      @include Btn5;
+      padding: 1.4rem 5rem;
+
+      &:hover{
+         cursor: pointer;
+         border-color: $white;
+         background-color: transparent;
+         color: $white;
+      }
+   }
+   //postal
+   &__postal{
+      @include Flex1;
+      background-color: $blue1;
+      padding: 1rem 2rem;
+
+      p{
+         @include F1R;
+         font-size: 1.8rem;
+         line-height: 120%;
+         color: $white;
+      }
+
+      span{
+         @include F1B;
+         font-size: 1.8rem;
+      }
+
+      .tooltip{
+         border: 1px solid $white;
+         padding: 0.5rem 1.5rem;
+         border-radius: 4px;
+   
+      }
+   }
+
+   //Registered Office Address
+   &--regOffAdd{
+      background: linear-gradient(0deg, rgba(44, 59, 88, 0.2), rgba(44, 59, 88, 0.2)), 
+                  url('../img/services-banners/ROA.png');
+   }
+
+   //Director Service Address
+   &--directorServAddress{
+      background: linear-gradient(0deg, rgba(44, 59, 88, 0.2), rgba(44, 59, 88, 0.2)), 
+                  url('../img/director-service-add.png');
+   } 
+
+   //Virtual Bussines Address
+   &--virtBussAdd{
+      background: linear-gradient(0deg, rgba(44, 59, 88, 0.2), rgba(44, 59, 88, 0.2)), 
+                  url('../img/services-banners/VBA.png');
+   }
+
+   //Virtual Bussines Plus
+   &--virtBussPlus{
+      background: linear-gradient(0deg, rgba(44, 59, 88, 0.4), rgba(44, 59, 88, 0.4)), 
+                  url('../img/services-banners/VBP.png');
+   }
+
+   //Telephone Answering
+   &--TAS{
+      background: linear-gradient(0deg, rgba(44, 59, 88, 0.2), rgba(44, 59, 88, 0.2)), 
+                  url('../img/services-banners/TAS.png');
+   }
+
+    //Virtual Bussines Address + Telephone Answering
+   &--VBA-TAS{
+      background: linear-gradient(0deg, rgba(44, 59, 88, 0.4), rgba(44, 59, 88, 0.4)), 
+                  url('../img/services-banners/VBA-TAS.png');
+   }
+
+   //Virtual Bussines Plus + Telephone Answering
+   &--VBP-TAS{
+      background: linear-gradient(0deg, rgba(44, 59, 88, 0.4), rgba(44, 59, 88, 0.4)), 
+                  url('../img/services-banners/VBP-TAS.png');
+   }
+
+   //Virtual Bussines Plus + Telephone AnsweringHosting
+   &--VBP-web{
+      background: linear-gradient(0deg, rgba(44, 59, 88, 0.4), rgba(44, 59, 88, 0.4)),
+                  url('../img/services-banners/VBP-Web.png');
+   }
+
+   //Virtual Bussines Plus + Legal Pack
+   &--VBP-legal{
+      background: linear-gradient(0deg, rgba(44, 59, 88, 0.4), rgba(44, 59, 88, 0.4)),
+                  url('../img/services-banners/VBP-Legal.png');
+   }
+}
+
+@media screen and (max-width: 500px){
+   .buyService{
+      width: 100% !important;
+
+      //Pricing
+      &__pricingBox{
+         display: block;
+      }
+
+      //Only Available
+      &__onlyAvailable{
+         width: 100%;
+         text-align: center;
+      }
+
+      //select - period
+      &__select{
+         select{
+            width: 100%;
+            max-width: 100%;
+         }
+      }
+
+      // buy now btn
+      &__buyBtn{
+         margin-top: 2rem;
+         width: 100%;
+         text-align: center;
+      }
+
+      //postal
+      &__postal{
+         display: block;
+         padding: 2rem;
+
+         p{
+            text-align: center;
+         }
+
+         span{
+            
+         }
+
+         .tooltip{
+            margin-top: 2rem;
+            text-align: center;
+         }
+      }
+   }
+}

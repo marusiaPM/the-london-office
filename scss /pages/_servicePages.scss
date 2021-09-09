@@ -1,0 +1,461 @@
+//SERVICE INTRO
+.serviceIntroWrapper{ 
+   padding: 6rem 0 6rem;
+
+   .serviceIntro{
+      display: grid;
+      grid-template-columns: 1fr 450px;
+      grid-template-rows: 1fr;
+      justify-items: stretch;
+      align-items: start;
+   
+      &__col1{
+         padding-right: 6rem;
+
+         h1{
+            @include H4;
+         }
+   
+         p{
+            @include P2;
+            margin-bottom: 3rem;
+         }
+
+         a{
+            @include P2;
+            color: $oran1;
+            text-decoration: none;
+            transition: all 0.5s ease;
+   
+            &:hover{
+               color: $blue1;
+            }
+         }
+      }
+   
+      &__col2{
+         width: 45rem;
+      }
+   } 
+}  
+
+
+
+//FEATURES
+.featuresWrapper{
+   padding: 6rem 0;
+
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   
+   &--regOfficeAddress{
+      background-image:linear-gradient(0deg, rgba(242, 246, 251, 0.94), rgba(242, 246, 251, 0.94)),
+                        url('../img/features-banners/roa.png');
+   }
+   &--directorServAddress{ 
+      background-image:linear-gradient(0deg, rgba(242, 246, 251, 0.94), rgba(242, 246, 251, 0.94)),
+                        url('../img/features-banners/dsa.png');
+   }
+   &--VBA{
+      background-image:linear-gradient(0deg, rgba(242, 246, 251, 0.94), rgba(242, 246, 251, 0.94)),
+                        url('../img/features-banners/vba.png');
+   }
+   &--VBP{
+      background-image:linear-gradient(0deg, rgba(242, 246, 251, 0.94), rgba(242, 246, 251, 0.94)),
+                        url('../img/features-banners/vbp.png');
+   }
+   &--TAS{
+      background-image:linear-gradient(0deg, rgba(242, 246, 251, 0.7), rgba(242, 246, 251, 0.7)),
+                        url('../img/features-banners/tas.png');
+   }
+   &--teleAnswering{
+      background-image:linear-gradient(0deg, rgba(242, 246, 251, 0.94), rgba(242, 246, 251, 0.94)), 
+                        url('../img/features-banners/tas.png');
+   }
+   &--VBA-TAS{
+      background-image:linear-gradient(0deg, rgba(242, 246, 251, 0.94), rgba(242, 246, 251, 0.94)),
+                        url('../img/features-banners/vba-tas.png');
+   }
+   &--VBP-TAS{
+      background-image:linear-gradient(0deg, rgba(242, 246, 251, 0.94), rgba(242, 246, 251, 0.94)),
+                        url('../img/features-banners/vbp-tas.png');
+   }
+   &--VBP-web{
+      background-image:linear-gradient(0deg, rgba(242, 246, 251, 0.94), rgba(242, 246, 251, 0.94)),
+                        url('../img/features-banners/vbp-web.png');
+   }
+   &--VBP-legal{
+      background-image:linear-gradient(0deg, rgba(242, 246, 251, 0.94), rgba(242, 246, 251, 0.94)),
+                        url('../img/features-banners/vbp-legal.png');
+   }
+   &--freeCompany{
+      background-image:linear-gradient(0deg, rgba(242, 246, 251, 0.94), rgba(242, 246, 251, 0.94)),
+                        url('../img/features-banners/vbp-tas.png');
+   }
+
+   .features{
+      @include Flex1;
+      align-items: flex-start;
+   }
+
+   .featuresList{
+      width: 32%;
+
+      &__h{
+         @include H4;
+         font-size: 3.2rem;
+      }
+   }
+
+   .feature{
+      @include Flex1;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      min-height: 5rem;
+      margin-bottom: 2rem;
+
+      &--last{
+         margin-bottom: 0;
+      }
+
+      &__icon{
+         width: 3rem !important;
+         height: 3rem !important;
+         margin-right: 2rem;
+
+      }
+
+      &__description{
+         @include F1R;
+         font-size: 1.6rem;
+         line-height: 160%;
+         color: $black;
+      }
+   }
+
+} 
+
+
+
+//FAQs
+.ServicesFAQsWrapper{
+   padding: 6rem 10%;
+   
+
+   .ServicesFAQsInner{
+      min-height: 820px;
+      max-width: 90rem;
+      background-image: url('../img/locationPin.svg');
+      background-repeat: no-repeat;
+      background-origin: content-box;
+      background-size: 70%;
+      background-position: 0 80px;
+
+      &__h1{
+         @include H3;
+         width: fit-content;
+         margin: auto;
+
+         &--bigMargin{
+            margin-bottom: 8rem;
+         }
+      }
+
+      &__p{
+         @include P1;
+         width: fit-content;
+         max-width: 90%;
+         margin: auto;
+         margin-bottom: 6rem;
+         text-align: center;
+      }
+
+   }
+
+   .faqS{
+      max-width: 70rem;
+      margin: auto;
+   }
+}
+
+
+
+//ADDITIONAL SERVICES
+.additionalServicesWrapper{
+   padding: 6rem 0;
+   
+   &__h1{
+      @include sectionHeading;
+   } 
+
+   &__h2{
+      @include sectionSubHeading;
+   }
+
+   .additionalServices{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      align-items: end;
+      justify-items: stretch;
+      align-items: stretch;
+   } 
+
+}
+
+.additionalServicesDropDown{
+      position: relative;
+      width: 30rem;
+      margin: auto;
+      margin-top: 3rem;
+
+      &__btn{
+         width: 30rem;
+         margin: auto;
+
+         @include F1R;
+         font-size: 2rem;
+         line-height: 100%;
+         color: $white;
+         text-align: center;
+
+         padding: 1.5rem 2rem;
+         background-color: $oran1;
+         border-radius: 6px;
+
+         i{
+            font-size: 2.1rem;
+            margin-left: 2rem;
+         }
+
+         &:hover{
+            cursor: pointer;
+         }
+
+      }
+
+      &__dropDown{
+         z-index: 10;
+         position: absolute;
+         width: 30rem;
+         margin: 0.5rem auto;
+         padding: 1rem 0;
+
+         list-style: none;
+         background-color: $white;
+         box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.15);
+         border-radius: 4px;
+
+         li{
+            padding: 2rem 1rem;
+            transition: all 0.5s ease;
+
+            a{
+               text-decoration: none;
+               @include F1R;
+               font-size: 1.8rem;
+               color: $black;
+            }
+
+            &:hover{
+               background-color: #EFEFEF;
+               cursor: pointer;
+
+               a{
+                  color: $oran1;
+               }
+            }
+         }
+
+         &--open{
+            display: block;
+            @include slideD-10px;
+         }
+
+         &--close{
+            display: none;
+         }
+      }
+}
+
+
+
+//CONTACT US
+.contactUs2Wrapper{
+   padding: 6rem 0;
+   @include Flex1;
+
+   .contactUs2Text{
+      width: 55%;
+
+         &__h{
+            @include H4;
+         }
+   
+         &__p{
+            @include P2;
+            margin-bottom: 3rem;
+
+            &--2{
+               margin-bottom: 0;
+            }
+         }
+   }
+
+   .contactUs2Form{
+      width: 40%;
+      padding: 3rem 3rem 1rem;
+
+      background: #FFFFFF;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+
+      h2{
+         @include F1R;
+         font-size: 2.2rem;
+         color: $black;
+         width: fit-content;
+         margin: auto;
+         margin-bottom: 1rem;
+      }
+
+      p{
+         @include P2;
+         font-size: 1.4rem;
+         text-align: center;
+         width: 90%;
+         margin: auto;
+         margin-bottom: 3rem;
+      }
+   }
+}
+
+
+
+//Additional Services Media Q
+@media screen and (max-width: 1800px){
+   .additionalServicesWrapper{
+   
+      .additionalServicesBox{
+            &__more{
+               padding: 5rem 2rem 2rem 2rem;
+   
+               background-image: url('../img/angle1.png');
+               background-size: cover;
+               background-repeat: no-repeat;
+               background-position: top center;
+   
+               @include Flex1;
+               flex-direction: column;
+               justify-content: center;
+   
+               p{
+                  text-align: center;
+                  margin-bottom: 2rem;
+               }
+            }
+      }
+   }
+}
+
+//Additional Services Media Q
+@media screen and (max-width: 1330px){
+   .additionalServicesWrapper{
+      .additionalServicesBox{
+      
+            &__more{
+   
+               p{
+                  @include F1B;
+                  color: $white;
+                  font-size: 2rem;
+                  line-height: 140%;
+               }
+   
+               a{
+                  @include Btn3;
+                  font-size: 1.8rem;
+               }
+            }
+   
+      }
+   }
+}
+
+//Service Intro Media Q
+//Contact Us Media Q
+@media screen and (max-width: 1080px){
+   .serviceIntroWrapper{
+      padding: 6rem 0 6rem;
+
+      .serviceIntro{
+         display: block;
+      
+         &__col1{
+            width: 100%;
+            padding-right: 0;
+            padding-bottom: 2rem;
+         }
+      
+         &__col2{
+            width: 100%;
+            
+         }
+      }
+   }
+
+   .featuresWrapper{
+      padding: 6rem 0 1rem;
+   
+      .features{
+         display: block;
+      }
+   
+      .featuresList{
+         width: 100%;
+         max-width: 50rem;
+         margin: auto;
+         margin-bottom: 5rem;
+
+      }
+   }
+
+   .contactUs2Wrapper{
+   
+      .contactUs2Text{
+         width: 40%;
+      }
+   
+      .contactUs2Form{
+         width: 55%;
+      }
+   }
+}
+
+//Additional Services Media Q
+//Contact Us Media Q
+@media screen and (max-width: 920px){
+   .additionalServicesWrapper{
+      .additionalServices{
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr  1fr 1fr;
+         align-items: end;
+         justify-items: stretch;
+         align-items: stretch;
+      }
+   }
+
+   .contactUs2Wrapper{
+   
+      .contactUs2Text{
+         width: 100%;
+      }
+   
+      .contactUs2Form{
+         margin-top: 3rem;
+         width: 100%;
+      }
+   }
+}

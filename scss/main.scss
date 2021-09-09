@@ -1,0 +1,97 @@
+/*-------------------
+    BASE FILES
+-------------------*/ 
+@import 'base/reset'; // reset the document, font size to 10rem, zeroes padding and margin
+
+/*--------------------
+    ABSTRACT FILES
+---------------------*/ 
+/*colors*/
+@import 'abstract/colors'; 
+//fonts and text 
+@import 'abstract/fontsAndText'; 
+//animations
+@import'abstract/animations';
+// states 
+@import 'abstract/states';
+// buttons 
+@import 'abstract/buttons';
+
+/*--------------------
+    LAYOUT FILES
+--------------------*/
+//HEADER ELEMENTS
+@import 'layout/navigation';
+@import 'layout/headerSlider';
+@import 'layout/header';
+//FOOTER
+@import 'layout/footers';
+//PRICING
+@import 'layout/pricing';
+//TESTIMONIALS
+@import 'layout/testimonials';
+//OUR SERVICES 1
+@import 'layout/ourServices1';
+//OUR APP 1
+@import 'layout/app1';
+//LOCATIONS 1
+@import 'layout/locations1';
+//FAQ
+@import 'layout/faq';
+//GET IN TOUCH
+@import 'layout/getInTouch';
+//BUY SERVICE from the service pages
+@import 'layout/buyService';
+//timeline carousel
+@import 'layout/timelineCarousel';
+//team carousel
+@import 'layout/teamCarousel';
+//offices map
+@import 'layout/officesMap';
+//contact us
+@import 'layout/contactUsSection';
+
+
+
+/*-----------------
+    CONTAINERS
+-------------------*/
+@import 'containers/containers';
+@import 'containers/boxes1';
+@import 'containers/boxes2';
+
+
+/*------------------
+    ELEMENTS
+------------------*/
+// drop downs 
+@import 'elements/dropDown';
+// modals 
+@import 'elements/modals';
+// forms 
+@import 'elements/forms';
+//tooltips
+@import 'elements/tooltips';
+
+
+/*---------------
+    PAGES
+----------------*/
+@import 'pages/index';
+@import 'pages/aboutUs';
+@import 'pages/contactUs';
+@import 'pages/termsAndConditions';
+@import 'pages/servicePages';
+@import 'pages/meetingRooms';
+@import 'pages/freeCompanyformation';
+@import 'pages/makePayment';
+@import 'pages/carts';
+@import 'pages/cart1';
+@import 'pages/cart2';
+@import 'pages/thankYou';
+@import 'pages/pricing';
+@import 'pages/locationsPage';
+@import 'pages/partners';
+@import 'pages/apps';
+@import 'pages/faq';
+@import 'pages/blog';

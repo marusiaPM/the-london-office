@@ -1,0 +1,244 @@
+.boxes1{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   column-gap: 0;
+   row-gap: 0;
+   justify-items: stretch;
+   align-items: stretch;
+
+   .box{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 20rem 27rem 4rem 1fr;
+      column-gap: 0;
+      row-gap: 0;
+      justify-items: stretch;
+      align-items: stretch;
+   
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+   
+   
+      //MOST POP
+      &__mostPop{
+         grid-column: 1 / span 1;
+         grid-row: 1 / span 1;
+   
+         img{
+            display: block;
+            height: 19rem;
+            margin-left: auto;
+         }
+      }
+   
+      //TOP 
+      &__top{
+         grid-column: 1 / span 1;
+         grid-row: 2 / span 1;
+   
+         img{
+            display: block;
+            width: 22rem;
+            padding: 0rem 2rem 5rem 2rem;
+         }
+      }
+      //ANGLE
+      &__angle{
+         grid-column: 1 / span 1;
+         grid-row: 3 / span 1;
+         background-image: url('../img/angle1-2.png');
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: bottom center;
+
+         &--blue{
+            background-image: url('../img/angle1-2-blue.png');
+         }
+      }
+      //MORE
+      &__more{
+         grid-column: 1 / span 1;
+         grid-row: 4 / span 1;
+         
+         padding: 2rem 2rem 2rem;
+         background-color:rgba(238, 133, 31, 0.9);
+         @include Flex1;
+   
+         a{
+            @include Btn3;
+            font-size: 2rem;
+            margin-left: 2rem;
+         }
+
+         &--blue{
+            background-color:rgba(44, 52, 88, 0.9);
+         }
+      }
+      &__moreInner{
+
+         align-self: flex-start !important;
+         max-width: 40rem;
+
+         h2{
+            @include F1B;
+            font-size: 2.8rem;
+            line-height: 140%;
+            color: $white;
+         }
+   
+         p{
+            @include F1R;
+            font-size: 1.8rem;
+            line-height: 140%;
+            color: $white;
+            margin-top: 1rem;
+         }
+   
+         ul{
+            margin-left: 1.5rem;
+            margin-top: 1rem;
+            li{
+               @include F1R;
+               font-size: 1.8rem;
+               line-height: 147%;
+               color: $white;
+            }
+         }
+
+         &--headingOnly{
+            align-self: center !important;
+         }
+      }
+
+      &--regOffAddPlusDirector{
+         background-image: url('../img/services-banners/ROA-DSA.png');
+      }
+   
+      &--VirtBussinesAddressTelAnsw{
+         background-image: url('../img/services-banners/VBA-TAS.png');
+      } 
+   
+      &--VirtBussinesPlusTelAnsw{
+         background-image: url('../img/services-banners/VBP-TAS.png');
+      }
+
+      &--VirtBussinesPlusLegal{
+         background-image: url('../img/services-banners/VBP-Legal.png');
+      } 
+   
+      &--meetingRooms{
+         background-image: url('../img/services-banners/meeting-rooms.png');
+      }
+   
+      &--virtBussinesPlus{
+         background-image: url('../img/services-banners/VBP.png');
+      }
+   
+      &--webHosting{
+         background-image: url('../img/services-banners/VBP-Web.png');
+      }
+
+      &--VirtBussinesAddress{
+         background-image: url('../img/services-banners/VBA.png');
+      }
+
+      &--companyFormation{
+         background-image: url('../img/services-banners/CF.png');
+      }
+
+      &--TAS{
+         background-image: url('../img/services-banners/TAS.png');
+      }
+
+      &--CF{
+         background-image: url('../img/services-banners/CF.png');
+      }
+   }
+}
+
+
+
+@media screen and (max-width: 1870px){
+   .boxes1{
+   
+      .box{
+          //MORE
+         &__more{
+
+            @include Flex1;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+
+
+            a{
+               @include Btn3;
+               font-size: 2rem;
+               margin-left: 0rem;
+               margin: 0 auto;
+               margin-top: 2rem;
+            }
+         }
+
+         &__moreInner{
+            width: 100%;
+            max-width: 100%;
+
+            h2{
+               text-align: center;
+            }
+            p{
+               text-align: center;
+            }
+
+            ul{
+               width: fit-content;
+               margin-left: auto;
+               margin-right: auto;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1080px){
+   .boxes1{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr ;
+      
+   
+      .box{
+            grid-template-rows: 11rem 25rem 4rem 1fr;
+
+            //MOST POP
+            &__mostPop{
+               grid-column: 1 / span 1;
+               grid-row: 1 / span 1;
+
+               img{
+                  display: block;
+                  height: 10rem;
+                  margin-left: auto;
+               }
+            }
+      
+            //TOP
+            &__top{
+               img{
+                  display: block;
+                  width: 20rem;
+               }
+            }
+            //ANGLE
+            &__angle{
+               background-size: cover;
+               background-repeat: no-repeat;
+               background-position: top center;
+            }
+
+      }
+   }
+}

@@ -1,0 +1,520 @@
+// OUR MEETING ROOMS 
+.ourMeetingRoomsWrap{
+
+   padding-top: 6rem;
+   padding-bottom: 6rem;
+
+   &__h1{
+      @include H4;
+   } 
+
+   &__h2{
+         @include sectionSubHeading;
+   }
+
+   p{
+      @include P2;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+
+      &:last-of-type{
+         margin-bottom: 6rem;
+      }
+   }
+
+   .ourMeetingRooms{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 6rem;
+      grid-template-rows: max-content;
+   }
+
+   .meetingRoom{ 
+      display: grid;
+      grid-template-rows: max-content max-content max-content;
+      grid-template-columns: 1fr max-content;
+
+      background-color: #F2F3F5;
+      padding: 2rem;
+      padding-bottom: 2.5rem;
+
+      &__capacity{
+         grid-column: 1 / span 2;
+         grid-row: 1 / span 1;
+
+         padding: 16rem 1rem 6rem 6rem;
+
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center center; 
+
+         img{
+            height: 15rem;
+         }
+
+         &--1{
+            background-image: url('../img/meetingRoom1.png');
+         }
+
+         &--2{
+            background-image: url('../img/meetingRoom2.png');
+         }
+      }
+
+      &__about{
+         grid-column: 1 / span 2;
+         grid-row: 2 / span 1;
+
+         margin-top: 3rem;
+         margin-bottom: 3rem;
+
+         h3{
+            @include F1R;
+            font-size: 2.4rem;
+            line-height: 180%;
+            color: $blue1;
+            margin-bottom: 1.5rem;
+         }
+         p{
+            @include P2;
+            font-size: 1.6rem;
+            margin-bottom: 0;
+         }
+      }
+
+      &__info{
+         grid-column: 1 / span 1;
+         grid-row: 3 / span 1;
+         width: fit-content;
+         
+         background-color: white;
+         border: 1px solid $oran1;
+         box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+         border-radius: 6px;
+
+         padding: 2rem;
+
+         @include Flex1;
+
+         img{
+            width: 5.8rem;
+            margin-right: 1rem;
+         }
+
+         p{
+            padding: 0;
+            margin: 0;
+         }
+
+         .meetingRoomPeople{
+            padding: 0;
+            margin: 0;
+            margin-right: 3rem;
+            @include F1R;
+            font-size: 2.4rem;
+            color: $blue1;
+            line-height: 100%;
+
+            span{
+               @include F1R;
+               font-size: 1.6rem;
+               color: #979797;
+            }
+         }
+
+         .meetingRoomPrice{
+            width: 6rem;
+            padding: 0;
+            margin: 0;
+            @include F1R;
+            font-size: 1.6rem;
+            color: $oran1;
+         
+            text-align: center;
+
+            span{
+               @include F1B;
+               font-size: 2.3rem;
+               color: $oran1;
+               line-height: 120%;
+            }
+         }
+      }
+      
+      &__mapBtn{
+         grid-column: 2 / span 1;
+         grid-row: 3 / span 1;
+         align-self: center;
+
+         margin-left: 1rem;
+         padding: 0;
+         height: fit-content;
+
+         @include Flex1;
+
+         img{
+            width: 2.4rem;
+            margin-right: 1rem;
+         }
+
+         p{
+            padding: 0;
+            margin: 0;
+            @include F1R;
+            font-size: 1.6rem;
+            transition: all 0.5s ease;
+         }
+
+         &:hover{
+            cursor: pointer;
+            p{
+               text-decoration: underline;
+            }
+         }
+
+      }
+   }
+} 
+
+// PORTLAND STREET 
+.portlandStreetWrap{
+   background-color: #F2F3F5;
+   display: grid;
+   grid-template-columns: 50% 600px auto;
+   margin-bottom: 6rem;
+
+   .portlandStreet{
+      grid-column: 1 / span 2;
+      @include Flex1;
+      justify-content: flex-start;
+      align-items: stretch;
+      
+
+      &__col1{
+         width: 50%;
+         padding: 5rem 1rem;
+
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-image: linear-gradient(0deg, rgba(44, 59, 88, 0.5), rgba(44, 59, 88, 0.5)),
+                           url('../img/services-banners/london-west.png');
+
+         @include Flex1; 
+         
+         h3{
+            @include H3;
+            color: $white;
+            font-size: 3.2rem;
+            margin: auto;
+
+            &:after{
+               margin-bottom: 0;
+            }
+         }
+      }
+
+      &__col2{
+         width: 50%;
+         padding: 5rem 0 5rem 5rem;
+
+         h3{
+            @include F1R;
+            font-size: 2.8rem;
+            color: $blue1;
+            margin-bottom: 4rem;
+         }
+
+         p{
+            @include P2;
+            margin-bottom: 4rem;
+         }
+
+         ul{
+            list-style: none;
+            margin-bottom: 4rem;
+
+            li{
+               width: fit-content;
+               @include P2;
+               @include Flex1;
+
+               i{
+                  color: $oran1;
+                  margin-right: 1rem;
+                  font-size: 0.9rem;
+               }
+            }
+            
+         }
+
+         .scrollToContactUs{
+            @include Btn2;
+            padding: 2rem 4rem;
+            margin: 0;
+         }
+      }
+   }
+}
+
+/// BELL YARD 
+.bellYardWrap{
+   background-color: #F2F3F5;
+   display: grid;
+   grid-template-columns: auto 600px 50%;
+
+   .bellYard{
+      grid-column: 2 / span 2;
+      @include Flex1;
+      justify-content: flex-start;
+      align-items: stretch;
+
+      &__col1{
+         width: 50%;
+         padding: 5rem 5rem 5rem 0rem;
+
+         h3{
+            @include F1R;
+            font-size: 2.8rem;
+            color: $blue1;
+            margin-bottom: 4rem;
+         }
+
+         p{
+            @include P2;
+            margin-bottom: 4rem;
+         }
+
+         .meetingRoomFeatures{
+            margin-bottom: 4rem;
+            @include Flex1;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            ul{
+               width: fit-content;
+               list-style: none;
+   
+               li{
+                  width: fit-content;
+                  @include P2;
+                  @include Flex1;
+   
+                  i{
+                     color: $oran1;
+                     margin-right: 1rem;
+                     font-size: 0.9rem;
+                  }
+               }
+               
+            }
+
+            &__1{
+               margin-right: 4rem;
+            }
+         }
+
+         .scrollToContactUs{
+            @include Btn2;
+            padding: 2rem 4rem;
+            margin: 0;
+         }
+      }
+
+      &__col2{
+         width: 50%;
+         padding: 5rem 1rem;
+
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-image: linear-gradient(0deg, rgba(44, 59, 88, 0.5), rgba(44, 59, 88, 0.5)),
+                           url('../img/services-banners/london-strand.png');
+
+         @include Flex1; 
+         
+         h3{
+            @include H3;
+            color: $white;
+            font-size: 3.2rem;
+            margin: auto;
+
+            &:after{
+               margin-bottom: 0;
+            }
+         }
+      }
+   }
+}
+
+
+//MEDIA
+@media screen and (max-width: 1340px){
+   .portlandStreetWrap{
+      background-color: #F2F3F5;
+      display: grid;
+      grid-template-columns: 50% 45% auto;
+   }
+
+   .bellYardWrap{
+      grid-template-columns: auto 45% 50%;
+   }
+}
+
+@media screen and (max-width: 1270px){
+   .ourMeetingRoomsWrap{
+      .meetingRoom{
+         display: grid;
+         grid-template-rows: max-content max-content max-content max-content;
+         grid-template-columns: 1fr;
+   
+         background-color: #F2F3F5;
+         padding: 2rem;
+         padding-bottom: 2.5rem;
+   
+         &__capacity{
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+         }
+   
+         &__about{
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+         }
+   
+         &__info{
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 1;
+            width: 100%;
+         }
+         
+         &__mapBtn{
+            grid-column: 1 / span 1;
+            grid-row: 4 / span 1;
+            align-self: center;
+            justify-self: center;
+   
+            margin-left: 1rem;
+            padding: 4rem 2rem 0 2rem;
+            height: fit-content;
+            width: fit-content;
+   
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1000px){
+   .ourMeetingRoomsWrap{
+      p{
+         margin-bottom: 3rem;
+      }
+
+      .ourMeetingRooms{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-column-gap: 3rem;
+         grid-template-rows: max-content;
+      }
+
+      .meetingRoom{
+
+         &__info{
+            
+   
+            @include Flex1;
+
+            .meetingRoomPeople{
+               padding: 0;
+               margin: 0;
+               margin-right: 0;
+            }
+   
+            .meetingRoomPrice{
+               width: 100%;
+               padding: 0;
+               margin: 0;
+               margin-top: 2rem;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 880px){
+   .portlandStreetWrap{
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .portlandStreet{
+         grid-column: 1 / span 1;
+         display: block;
+
+         &__col1{
+            width: 100%;
+         }
+
+         &__col2{
+            width: 90%;
+            margin: auto;
+            padding: 5rem 0;
+         }
+      }
+   }
+   .bellYardWrap{
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .bellYard{
+         grid-column: 1 / span 1;
+         display: block;
+
+         &__col2{
+            width: 100%;
+         }
+
+         &__col1{
+            width: 90%;
+            margin: auto;
+            padding: 5rem 0;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 800px){
+   .ourMeetingRoomsWrap{
+      .ourMeetingRooms{
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-row-gap: 3rem;
+      }
+   }
+}
+
+@media screen and (max-width: 400px){
+   .ourMeetingRoomsWrap{
+      .meetingRoom{
+         &__capacity{
+            padding: 7rem 1rem;
+
+            img{
+               height: 10rem;
+            }
+         }
+
+         &__info{
+            img{
+               display: none;
+            }
+         }
+
+         .meetingRoomPeople{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+         }
+      }
+   }
+}

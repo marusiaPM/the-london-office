@@ -1,0 +1,362 @@
+//_________FORMS_______
+
+.myForms {
+    &__input {
+        width: 100%;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border: 1px solid $grey1;
+        border-radius: 5px;
+        background-color: $grey1;
+        outline: none;
+        color: $black;
+        @include F1R;
+        font-size: 1.6rem;
+
+        &:focus {
+            border: 1px solid $oran1;
+        }
+    }
+
+    &__textarea {
+        width: 100%;
+        height: 15rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border: 1px solid $grey1;
+        border-radius: 5px;
+        background-color: $grey1;
+        outline: none;
+        color: $black;
+        @include F1R;
+        font-size: 1.6rem;
+        resize: none;
+        overflow: scroll;
+
+        &:focus {
+            border: 1px solid $oran1;
+        }
+    }
+
+    &__submit {
+        display: block;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem 1rem !important;
+        width: fit-content;
+
+        @include F1B;
+        font-size: 1.4rem;
+        color: $white;
+
+        border-radius: 0.4rem;
+        border: 2px solid $oran1;
+        background-color: $oran1;
+
+        transition: all 1s ease;
+
+        &:hover {
+            background-color: transparent;
+            color: $oran1;
+            border: 2px solid $oran1;
+            cursor: pointer;
+        }
+
+        &--1 {
+            width: 100%;
+        }
+
+        &--2{
+            margin: 0 0 0 0;
+        }
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: center;
+
+        input {
+            margin-right: 0.5rem;
+            font-size: 4rem;
+        }
+
+        label {
+            color: $black;
+            @include F1R;
+            font-size: 1.6rem;
+        }
+
+        a {
+            @include F1B;
+            font-size: 1.4rem;
+            color: $oran1;
+            text-decoration: none;
+            transition: all 1s ease;
+
+            &:hover {
+            color: $blue1;
+            }
+        }
+    }
+
+    &__select {
+        display: inline-block;
+        font-size: 1.6rem;
+        @include F1M;
+        color: $grey2;
+        line-height: 160%;
+        padding: 0.6em 1.4em 0.5em 0.8em;
+        width: 26rem;
+        max-width: 90%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        border: 1px solid $grey1;
+        box-shadow: none;
+        border-radius: 5px;
+        outline: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: $grey1;
+        background-image: url("../img/angle-down-solid.svg"),
+            linear-gradient(to bottom, $grey1 100%, $grey1 100%);
+        background-repeat: no-repeat, repeat;
+        background-position: right 0.7em top 50%, 0 0;
+        background-size: 1.2rem auto, 100%;
+
+        &:focus {
+            border: 1px solid $oran1;
+        }
+    }
+
+    &__select2 {
+        font-size: 1.6rem;
+        @include F1R;
+        color: $grey2;
+        line-height: 160%;
+
+        padding: 0.6em 1.4em 0.5em 0.8em;
+        width: 100%;
+
+        box-sizing: border-box;
+        margin-bottom: 2rem;;
+
+        border: 1px solid $grey1;
+        box-shadow: none;
+        border-radius: 5px;
+        outline: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+
+        background-color: $grey1;
+        background-image: url("../img/angle-down-solid.svg"),
+                        linear-gradient(to bottom, $grey1 100%, $grey1 100%);
+        background-repeat: no-repeat, repeat;
+        background-position: right 0.7em top 50%, 0 0;
+        background-size: 1.2rem auto, 100%;
+
+        &:focus {
+            border: 1px solid $oran1;
+        }
+    }
+
+    &__option2{
+            font-size: 1.6rem;
+            @include F1R;
+            line-height: 160%;
+    }
+}
+
+
+.input1 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid $grey1;
+    border-radius: 5px;
+    background-color: $grey1;
+    outline: none;
+    color: $black;
+    @include F1R;
+    font-size: 1.6rem;
+    appearance: none; 
+
+    &:focus {
+        border: 1px solid $oran1;
+    }
+
+    &[type=number]::-webkit-inner-spin-button{
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+
+    &input[type=number]::-webkit-outer-spin-button{
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+
+}
+
+.select2 {
+    cursor: pointer;
+    font-size: 1.6rem;
+    @include F1R;
+    color: $black;
+    line-height: 160%;
+
+    padding: 0.6em 1.4em 0.5em 0.8em;
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid $grey1;
+    box-shadow: none;
+    border-radius: 5px;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    background-color: $grey1;
+    background-image: url("../img/angle-down-solid.svg"),
+                    linear-gradient(to bottom, $grey1 100%, $grey1 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 1.2rem auto, 100%;
+
+    &:focus {
+        border: 1px solid $oran1;
+    }
+}
+
+.option2{
+    font-size: 1.6rem;
+    @include F1R;
+    line-height: 160%;
+}
+
+.checkbox1 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    input {
+        margin-right: 1rem;
+        font-size: 5rem;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    label {
+        color: $black;
+        @include F1R;
+        font-size: 2rem;
+    }
+
+    a {
+        @include F1M;
+        font-size: 2rem;
+        color: $oran1;
+        transition: all 1s ease;
+
+        &:hover {
+            color: $blue1;
+            text-decoration: none;
+        }
+    }
+}
+
+.checkbox2{
+    //display: block;
+    color: $black;
+    @include F1M;
+    font-size: 1.8rem;
+
+    position: relative; 
+    padding-left: 0.8rem;
+
+    cursor: pointer !important;
+
+    .checkmark {  
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1.9rem;
+        width: 1.9rem;
+
+        background-color: white;
+        border: 2px solid $oran1;
+        border-radius: 3px;
+    }
+
+    input{
+        opacity: 0 !important;
+        cursor: pointer !important;
+
+        &:checked ~ .checkmark{
+            background-color: $oran1 !important;
+
+            &::after{
+                content: "\f00c";
+                font-family: "FontAwesome";
+                font-weight: 300;
+                font-size: 1.3rem;
+                position: absolute;
+                top: 1px;
+                left: 1px;
+                color: $white;
+            }
+        }
+    }
+}
+
+.submit1 {
+    display: block;
+    padding: 1rem 1rem;
+    width: fit-content;
+
+    @include F1B;
+    font-size: 1.4rem;
+    color: $white;
+
+    border-radius: 0.4rem;
+    border: 2px solid $oran1;
+    background-color: $oran1;
+
+    transition: all 1s ease;
+
+    &:hover {
+        background-color: transparent;
+        color: $oran1;
+        border: 2px solid $oran1;
+        cursor: pointer;
+    }
+
+    
+}
+
+.submit2{
+    @include Flex1;
+    @include Btn2;
+}
+
+.textarea1 {
+    width: 100%;
+    height: 15rem;
+    padding: 1rem;
+    border: 1px solid $grey1;
+    border-radius: 5px;
+    background-color: $grey1;
+    outline: none;
+    color: $black;
+    @include F1R;
+    font-size: 1.6rem;
+    resize: none;
+    overflow: scroll;
+
+    &:focus {
+        border: 1px solid $oran1;
+    }
+}

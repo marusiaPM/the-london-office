@@ -1,0 +1,161 @@
+//_________FONTS & TEXT_______
+//Getting the fonts from Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+//Variables with the fonts
+$font1: 'Roboto', sans-serif;
+$font2: 'Lato', sans-serif;
+$font3: 'Handlee', cursive;
+
+//Text mix-in
+//Roboto L
+@mixin F1L{
+    font-family: $font1;
+    font-weight: 300;
+}
+//Roboto Regular
+@mixin F1R{
+    font-family: $font1;
+    font-weight: 400;
+}
+//Roboto Medium
+@mixin F1M{
+    font-family: $font1;
+    font-weight: 500;
+}
+//Roboto Bold
+@mixin F1B{
+    font-family: $font1;
+    font-weight: 700;
+}
+//Latoo Regular
+@mixin F2R{
+    font-family: $font2;
+    font-weight: 400;
+}
+//Roboto Bold
+@mixin F2B{
+    font-family: $font2;
+    font-weight: 700;
+}
+
+//Heading style 1 - orange and upercase
+@mixin H1 {
+    @include F1R;
+    font-size: 1.5rem;
+    color: $oran1;
+    line-height: 160%;
+    text-transform: uppercase;
+}
+
+//Heading style 2 - basic blue
+@mixin H2 {
+    @include F1R;
+    font-size: 2rem;
+    color: $blue1;
+    line-height: 160%;
+}
+
+//blue with line in centre
+@mixin H3{
+    @include F1R;
+    font-size: 3rem;
+    color: $blue1;
+    line-height: 160%;
+    text-align: center;
+    width: fit-content;
+
+    &:after{
+        content:'';
+        display:block;
+        width:5rem; 
+        height:0;
+        margin: auto;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        border-bottom:4px solid $oran1;
+    }
+}
+
+//blue with line on left
+@mixin H4{
+    @include F1R;
+    font-size: 3rem;
+    color: $blue1;
+    line-height: 160%;
+    text-align: left;
+    width: fit-content;
+
+    &:after{
+        content:'';
+        display:block;
+        width:5rem; 
+        height:0;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        border-bottom:4px solid $oran1;
+    }
+}
+
+// Paragraph style 1 
+@mixin P1 {
+    @include F1R;
+    font-size: 1.6rem;
+    color: $black;
+    line-height: 160%;
+}
+
+// Paragraph style 1 
+@mixin P2 {
+    @include F2R;
+    font-size: 1.6rem;
+    color: $black;
+    line-height: 160%;
+}
+
+// SECTION HEADING AND SUB HEADING 
+@mixin sectionHeading {
+    @include H3;
+    width: fit-content;
+    max-width: 90%;
+    margin: auto;
+}
+@mixin sectionSubHeading {
+    @include P1;
+    width: fit-content;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+@mixin link1 {
+    @include F1R;
+    font-size: 1.6rem;
+    color: $oran1;
+    text-decoration: none;
+
+    transition: all 0.5s ease;
+
+    &:hover{
+        cursor: pointer;
+        color: $blue1;
+    }
+}
+
+.link1{
+    @include F1R;
+    font-size: 1.6rem;
+    color: $oran1;
+    text-decoration: none;
+
+    transition: all 0.5s ease;
+
+    &:hover{
+        cursor: pointer;
+        color: $blue1;
+    }
+
+}

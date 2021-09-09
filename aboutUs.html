@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>THE LONDON OFFICE | ABOUT US</title>
+
+
+    <!--STYLE SHEET-->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- FONT AWESOME  -->
+    <script src="https://kit.fontawesome.com/be3a5a4e18.js" crossorigin="anonymous"></script>
+    <!-- JS files  -->
+    <script src="js/modals.js" defer></script>
+    <script src="js/mainNav.js" defer></script>
+    <script src="js/headerSlider.js" defer></script>
+    <script src="js/pricing.js" defer></script>
+    <script src="js/testimonials.js" defer></script>
+    <script src="js/dropDowns.js" defer></script>
+    <script src="js/timelineCarousel.js" defer></script>
+
+</head>
+
+<body>
+    <!-- HEADER  -->
+    <div class="header2">
+        <!-- NAVIGATION  -->
+        <div class="navigation">
+
+            <!-- TOP NAVIGATION  --> 
+            <nav class="topNavigationWrapper">
+                <div class="topNavigation row90">
+
+                    <!-- left side  -->
+                    <div class="topNavigation__left">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+44 (0) 207 183 3787</p>
+                    </div>
+
+                    <!-- right side  -->
+                    <div class="topNavigation__right">
+
+                        <!-- discount  -->
+                        <div class="topNavigation__discount">
+                            <a href="#" id="openDiscountModal">Get 10&#37; Off</a>
+                        </div>
+
+                        <!-- bascket  -->
+                        <div class="topNavigation__basket">
+                            <a href="#" target="blank"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+
+                        <!-- vertical line  -->
+                        <div class="topNavigation__vl topNavigation__vl--1"></div>
+
+                        <!-- log in  -->
+                        <div class="topNavigation__logIn openLogInBtn">
+                            <i class="fas fa-user"></i>
+                            <p>Log In</p>
+                        </div>
+
+                        <!-- vertical line  -->
+                        <div class="topNavigation__vl topNavigation__vl--2"></div>
+
+                        <!-- socials  -->
+                        <div class="topNavigation__socials">
+                            <a href="https://www.linkedin.com/company/registered-office-uk-ltd/" target="blank"><i
+                                    class="fab fa-linkedin-in"></i></a>
+
+                            <a href="https://www.facebook.com/registeredoffice" target="blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+
+                            <a href="https://twitter.com/registered_uk" target="blank"><i
+                                    class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+
+            <!-- MAIN NAVIGATION  -->
+            <nav class="mainNavigationWrapper">
+                <div class="mainNavigation row90">
+
+                    <!-- logo  -->
+                    <div class="mainNavigation__logo">
+                        <a href="index.html">
+                            <img src="img/Logo.svg" alt="">
+                        </a>
+                    </div>
+
+                    <!-- links  -->
+                    <div class="mainNavigation__linksContainer" id="mainNav">
+                        <ul class="mainNavigation__links">
+                            <li>
+                                <a href="index.html" class="mainNavigation__link">Home</a>
+                            </li>
+
+                            <!-- services drop down  -->
+                            <li id="servicesDropDownBtn">
+                                <a href="#" class="mainNavigation__link">Our Services <i class="fas fa-chevron-down "
+                                        id="servicesDropDownArrow"></i></a>
+                                <!-- drop down  -->
+                                <ul class="dropDown1 hideDropDown" id="servicesDropDown">
+                                    <!-- column 1  -->
+                                    <ul class="dropDown1__column">
+                                        <li class="dropDown1__heading">Address Services</li>
+                                        <li><a href="service1.html">Registered Office Address</a></li>
+                                        <li><a href="service2.html">Director Service Address</a></li>
+                                        <li><a href="service3.html">Virtual Business Address</a></li>
+                                        <li><a href="service4.html">Virtual Business Plus</a></li>
+                                    </ul>
+                                    <!-- column 2  -->
+                                    <ul class="dropDown1__column">
+                                        <li class="dropDown1__heading">Business Call Answering</li>
+                                        <li><a href="service5.html">Telephone Answering Service</a></li>
+                                    </ul>
+                                    <!-- column 3  -->
+                                    <ul class="dropDown1__column">
+                                        <li class="dropDown1__heading">Company Formations</li>
+                                        <li><a href="service6.html">Free Limited Company Formation</a></li>
+                                    </ul>
+                                    <!-- column 4  -->
+                                    <ul class="dropDown1__column dropDown1__column--last">
+                                        <li class="dropDown1__heading">Other Services</li>
+                                        <li><a href="service7.html">Meeting Rooms</a></li>
+                                    </ul>
+                                    <!-- column 5  -->
+                                    <ul class="dropDown1__column dropDown1__column--bottom">
+                                        <li class="dropDown1__heading">Combined Services</li>
+                                        <li><a href="service8.html">Virtual Business Address + Telephone Answering
+                                                Service </a>
+                                        </li>
+                                        <li><a href="service9.html">Virtual Business Plus + Telephone Answering
+                                                Service</a></li>
+                                        <li><a href="service10.html">Virtual Business Plus + Website &amp; Email
+                                                Hosting</a></li>
+                                        <li><a href="service11.html">Virtual Business Plus + Legal Document Pack</a>
+                                        </li>
+                                    </ul>
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="pricing.html" class="mainNavigation__link">Pricing</a>
+                            </li>
+
+                            <li>
+                                <a href="locations.html" class="mainNavigation__link">Locations</a>
+                            </li>
+
+                            <li>
+                                <a href="FAQ.html" class="mainNavigation__link">FAQs</a>
+                            </li>
+
+                            <li>
+                                <a href="aboutUs.html" class="mainNavigation__link mainNavigation__link--active">About
+                                    Us</a>
+                            </li>
+
+                            <li>
+                                <a href="partners.html" class="mainNavigation__link">Partners</a>
+                            </li>
+
+                            <li>
+                                <a href="blog.html" class="mainNavigation__link">Blog</a>
+                            </li>
+
+                            <li>
+                                <a href="apps.html" class="mainNavigation__link">Our App</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html" class="mainNavigation__link mainNavigation__link--last">Contact
+                                    Us</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                    <!-- burger  -->
+                    <div class="mainNavigation__burger" id="burgerMenu">
+                        <div class="burgerLine burgerLine--1"></div>
+                        <div class="burgerLine burgerLine--2"></div>
+                        <div class="burgerLine burgerLine--3"></div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+        <!-- navigation end  -->
+
+        <div class="header2Content header2Content--aboutUs">
+            <div class="header2ContentInner row90">
+                <h1 class="header2ContentInner__h1">About The London Office</h1>
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+
+
+    <!-- BASIC NUMBERS  -->
+    <div class="basicNumbersWrap row90">
+        <div class="basicNumbers">
+            <div class="basicNumbers__number basicNumbers__number--established">
+                <p>
+                    Est.</br>
+                    <span>
+                        2014
+                    </span>
+                </p>
+            </div>
+
+            <div class="basicNumbers__number basicNumbers__number--locations">
+                <p>
+                    6</br>
+                    <span>
+                        Locations
+                    </span>
+                </p>
+            </div>
+
+            <div class="basicNumbers__number basicNumbers__number--clients">
+                <p>
+                    15k+</br>
+                    <span>
+                        Clients
+                    </span>
+                </p>
+            </div>
+
+            <div class="basicNumbers__number basicNumbers__number--employees">
+                <p>
+                    25</br>
+                    <span>
+                        Employees
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- basic numbers end  -->
+
+
+    <!-- ABOUT US  -->
+    <div class="aboutUsWrap">
+        <div class="aboutUs row90">
+            <div class="aboutUs__col1">
+                <p>
+                    The London Office is one of the UK’s most trusted behind-the-scenes B2B service providers,
+                    specialising in affordable Registered Office Address, Director Service Address, Business Address, Company
+                    Formations and Telephone Answering services.
+                </p>
+                <p>
+                    Since starting with a single London office in 2014, we have now grown to six prestigious city centre
+                    offices in two countries, with even more locations in the pipeline.
+                </p>
+                <p>
+                    Our client base is diverse, with companies from all over the world using the security of a UK
+                    company address to trade both nationally and internationally.
+                </p>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+            <div class="aboutUs__col2">
+                <img src="img/rand5.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- about us end -->
+
+
+    <!-- OUR HISTORY  -->
+    <div class="ourHistoryWrap">
+
+        <h1 class="ourHistoryWrap__h1">
+            Our History
+        </h1>
+
+        <!-- TIMELINE CAROUSEL  -->
+        <div class="row90 timelineCarousel">
+
+            <!-- controls  -->
+            <div class="timelineCarousel__controls">
+
+                <!-- carousel line  -->
+                <div class="timelineCarousel__line">
+
+                </div>
+
+                <!-- arrows  -->
+                <div class="timelineCarousel__button timelineCarousel__button--prev is-hidden">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="timelineCarousel__button timelineCarousel__button--next">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+                <!-- carusel nav  -->
+                <div class="timelineCarousel__nav">
+                    <p class="timelineCarousel__indicator timelineCarouselCurrentIndicator">
+                        <span>2014</span>
+                        <i class="fas fa-circle"></i>
+                    </p>
+                    <p d class="timelineCarousel__indicator">
+                        <span>2015</span>
+                        <i class="fas fa-circle"></i>
+                    </p d>
+                    <p class="timelineCarousel__indicator">
+                        <span>2016</span>
+                        <i class="fas fa-circle"></i>
+                    </p>
+                    <p class="timelineCarousel__indicator">
+                        <span>2017</span>
+                        <i class="fas fa-circle"></i>
+                    </p>
+                    <p class="timelineCarousel__indicator">
+                        <span>2018</span>
+                        <i class="fas fa-circle"></i>
+                    </p>
+                    <p class="timelineCarousel__indicator">
+                        <span>2019</span>
+                        <i class="fas fa-circle"></i>
+                    </p>
+                    <p class="timelineCarousel__indicator">
+                        <span>2020</span>
+                        <i class="fas fa-circle"></i>
+                    </p>
+                    <p class="timelineCarousel__indicator">
+                        <span>2021</span>
+                        <i class="fas fa-circle"></i>
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- carousel content  -->
+            <div class="timelineCarousel__track-container">
+                <ul class="timelineCarousel__track">
+                    <!-- 2014  -->
+                    <li class="timelineCarousel__slide timelineCarouselCurrent">
+                        <h3>
+                            2014
+                        </h3>
+                        <p>
+                            The Registered Office UK Ltd was formed.
+                        </p>
+                    </li>
+                    <!-- 2015  -->
+                    <li class="timelineCarousel__slide">
+                        <h3>
+                            2015
+                        </h3>
+                        <p>
+                            Our first Ipswich office location opened at Chalfont Square.
+                        </p>
+                    </li>
+                    <!-- 2016  -->
+                    <li class="timelineCarousel__slide">
+                        <h3>
+                            2016
+                        </h3>
+                        <p>
+                            Our first Edinburgh office opened at 101 Rose Street South Lane in June, followed by our
+                            first Central London office at 85 Great Portland Street in October.
+                        </p>
+                    </li>
+                    <!-- 2017  -->
+                    <li class="timelineCarousel__slide">
+                        <h3>
+                            2017
+                        </h3>
+                        <p>
+                            We opened our second Edinburgh location at 64 Cumberland Street in July and moved to our new
+                            central Ipswich office on Queen Street in November.
+                        </p>
+                    </li>
+                    <!-- 2018  -->
+                    <li class="timelineCarousel__slide">
+                        <h3>
+                            2018
+                        </h3>
+                        <p>
+                            In April, we opened our second Central London office at 63-66 Hatton Garden and by December,
+                            had opened our third central London location at 7 Bell Yard.
+                        </p>
+                    </li>
+                    <!-- 2019  -->
+                    <li class="timelineCarousel__slide">
+                        <h3>
+                            2019
+                        </h3>
+                        <p>
+                            The business continued to grow, and we strengthened our position by nearly doubling our
+                            number of employees.
+                        </p>
+                    </li>
+                    <!-- 2020  -->
+                    <li class="timelineCarousel__slide">
+                        <h3>
+                            2020
+                        </h3>
+                        <p>
+                            In September, our fourth Central London location will open at 167-169 Great Portland Street,
+                            offering a new meeting room space.
+                        </p>
+                    </li>
+                    <!-- 2021  -->
+                    <li class="timelineCarousel__slide">
+                        <h3>
+                            2021
+                        </h3>
+                        <p>
+                            We will be looking at new office locations in Edinburgh, Manchester, Cardiff, Cambridge and
+                            Gibraltar.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+        <!-- timeline carousel end  -->
+
+    </div>
+    <!-- our history end  -->
+
+
+    <!-- OUR LOCATIONS  -->
+    <div class="ourLocationsWrap">
+        <!-- our locations text  -->
+        <div class="ourLocationsTextWrap">
+           <div class="ourLocationsText">
+              <h1 class="ourLocationsText__h1">
+                    Our Locations
+              </h1>
+              <p class="ourLocationsText__p">
+                 The London Office has three prestigious addresses in Central London in the West End, City and the Strand. We also have offices in Edinburgh and Ipswich.
+              </p>
+           </div>
+        </div>
+        <!-- our location text end  -->
+
+        <!-- OFFICES MAP  --> 
+        <div class="officesMap">
+        <!-- maps  -->
+        <img src="img/map1.png" alt="" class="officesMap__map1">
+        <img src="img/map2.png" alt="" class="officesMap__map2">
+
+        <!-- location pins  -->
+        <!-- cardif  -->
+        <div class="officesMap__pin officesMap__pin--cardif">
+           <img src="img/pin-grey.svg" alt="" >
+           <p class="officesMap__address officesMap__address--cardif">
+              Cardiff <br>
+              Coming Soon!
+           </p>
+        </div>
+        <!-- london 1  -->
+        <div class="officesMap__pin officesMap__pin--london1">
+           <img src="img/pin-orange.svg" alt="" >
+           <p class="officesMap__address officesMap__address--lnd1">
+              85 Great Portland Street <br>
+              London <br>
+              W1W 7LT
+           </p>
+        </div>
+        <!-- london 2  -->
+        <div class="officesMap__pin officesMap__pin--london2">
+           <img src="img/pin-orange.svg" alt="" >
+           <p class="officesMap__address officesMap__address--lnd2">
+              63-66 Hatton Garden <br>
+              London <br>
+              EC1N 8LE
+           </p>
+        </div>
+        <!-- london 3  -->
+        <div class="officesMap__pin officesMap__pin--london3">
+           <img src="img/pin-orange.svg" alt="" >
+           <p class="officesMap__address officesMap__address--lnd3">
+              7 Bell Yard <br>
+              London <br>
+              WC2A 2JR
+           </p>
+        </div> 
+        <!-- ipswich  -->
+        <div class="officesMap__pin officesMap__pin--ipswich">
+           <img src="img/pin-orange.svg" alt="" >
+           <p class="officesMap__address officesMap__address--ipsw">
+              10 Queen Street <br>
+              Ipswich <br>
+              IP1 1SS
+           </p>
+        </div>
+        <!-- cambridge  -->
+        <div class="officesMap__pin officesMap__pin--cambridge">
+           <img src="img/pin-grey.svg" alt="" >
+           <p class="officesMap__address officesMap__address--cam">
+              Cambridge <br>
+              Coming Soon!
+           </p>
+        </div>
+        <!-- manchester  -->
+        <div class="officesMap__pin officesMap__pin--manchester">
+           <img src="img/pin-grey.svg" alt="" >
+           <p class="officesMap__address officesMap__address--man">
+              Manchester <br>
+              Coming Soon!
+           </p>
+        </div>
+        <!-- edinburgh 1  -->
+        <div class="officesMap__pin officesMap__pin--edinburgh1">
+           <img src="img/pin-orange.svg" alt="" >
+           <p class="officesMap__address officesMap__address--ed1">
+              64 Cumberland Street <br>
+              Edinburgh <br>
+              EH3 6RE
+           </p>
+        </div>
+        <!-- edinburgh 2  -->
+        <div class="officesMap__pin officesMap__pin--edinburgh2">
+           <img src="img/pin-orange.svg" alt="" >
+           <p class="officesMap__address officesMap__address--ed2">
+              101 Rose Street South Lane <br>
+              Edinburgh <br>
+              EH2 3JG
+           </p>
+        </div>
+        
+
+        </div>
+        <!-- offices map end  -->
+    </div>
+    <!-- our locations end  -->
+
+
+    <!-- OUR PROGRESS  -->
+    <div class="ourProgressWrap">
+        <h1 class="ourProgressWrap__h1">
+            Over <span>15k+</span> Clients & Growing
+        </h1>
+        <p class="ourProgressWrap__p">
+            Since 2014, The London Office has gone from strength to strength to become one of the UKs most trusted B2B service providers.
+        </p>
+        <img src="img/ growth-chart.svg" alt="" class="ourProgressWrap__chart">
+    </div>
+    <!-- our progress end  -->
+
+
+    <!-- OUR APPS  -->
+    <div class="aboutOurAppsWrap row90"> 
+        <div class="aboutOurApps">
+            <h1 class="aboutOurApps__h1">
+                Always On The Go? </br>
+                Get The London Office on Your Mobile
+            </h1>
+
+            <p class="aboutOurApps__p">
+                Download our free MYCO app to view your mail, telephone messages and manage your account.
+            </p>
+
+            <div class="aboutOurApps__btns">
+                <a href="https://apps.apple.com/us/app/the-london-office/id1240742424?ls=1" target="blank">
+                    <img src="img/AppApple.png" alt="">
+                </a>
+
+                <a href="https://play.google.com/store/apps/details?id=com.london.home&hl=en" target="blank">
+                    <img src="img/AppGooogle.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="aboutOurAppsImg">
+            <img src="img/app1.png" alt="">
+        </div>
+    </div>
+    <!-- our apps end  -->
+
+
+    
+    <!-- Accreditations -->
+    <div class="accreditationsWrap">
+        <h1 class="accreditationsWrap__h1">
+            Accreditations, Certifications & Licenses
+        </h1>
+        <div class="accreditations row90">
+            <!-- hm revenue  -->
+            <div class="accreditations__box">
+                <img src="img/logos/newhmr.png" alt="">
+                <p>
+                    The British Government HMRC MLR certifies us as a Companies Service & Virtual Office Provider. MLR License no: XFML00000131203.
+                </p>
+            </div>
+
+            <!-- ico  -->
+            <div class="accreditations__box">
+                <img src="img/logos/ico.jpg" alt="">
+                <p>
+                    Registered Office (UK) Ltd is registered with the Information Commissioners Office. Our company is registered under Data Protection Act 1998 and our ICO registration number is ZA219698
+                </p>
+            </div>
+
+            <!-- companies house  -->
+            <div class="accreditations__box">
+                <img src="img/logos/company-house.png" alt="">
+                <p>
+                    Registered Office (UK) Ltd is an officially licensed company formation agent with Companies House.
+                </p>
+            </div>
+
+            <!-- camden -->
+            <div class="accreditations__box">
+                <img src="img/logos/camden.png" alt="">
+                <p>
+                    Our Hatton Garden office is located within the borough of Camden and is registered with Camden Trading Standards to ensure fair trading.
+                </p>
+            </div>
+
+            <!-- westminster -->
+            <div class="accreditations__box">
+                <img src="img/logos/westminster.jpg" alt="">
+                <p>
+                    Both our Great Portland Street and Bell Yard addresses lie within the City of Westminster boundaries and are registered with local Trading Standards.
+                </p>
+            </div>
+
+            <!-- nca -->
+            <div class="accreditations__box">
+                <img src="img/logos/nca-logo.png" alt="">
+                <p>
+                    The NCA is a crime-fighting law agency responsible for leading the UK’s fight to cut serious and organised crime. Registered Office (UK) Ltd is registered with the NCA to submit Suspicious Activity Reports (SARs).
+                </p>
+            </div>
+
+            <!-- trust pilot -->
+            <div class="accreditations__box">
+                <a href="https://www.trustpilot.com/review/thelondonoffice.com" target="_blank">
+                    <img src="img/logos/trustpilot.png" alt="">
+                </a>
+                
+                <p>
+                    We like to be as transparent as possible and encourage clients to leave honest reviews on Trustpilot, one of the best-known and most trusted consumer review sites.
+                </p>
+            </div>
+
+            <!-- google -->
+            <div class="accreditations__box">
+                
+                <img src="img/logos/google.png" alt="">
+                
+                <p>
+                    We know how important good reviews are and always encourage clients to rate us on the Google,the world’s number one search engine.
+                </p>
+            </div>
+
+            <!-- worldpay -->
+            <div class="accreditations__box">
+                <img src="img/logos/worldpay.png" alt="">
+                <p>
+                    We use Worldpay to ensure a smooth and secure payment process for our clients. Worldpay guarantees safe payments with robust fraud protection and PCI compliance. 
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Accreditations end  -->
+
+
+    <!-- GET IN TOUCH  -->
+    <div class="getInTouchWrapper">
+
+        <div class="getInTouch">
+            <img src="img/triangle.png" alt="" class="getInTouch__triangle">
+
+            <div class="getInTouch__col2Wrap">
+                <div class="getInTouch__col2">
+                    <a href="#">
+                        <i class="fas fa-comments"></i>
+                        Live Chat
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-clock"></i>
+                        Arrange a Call Back
+                    </a>
+                </div>
+            </div>
+
+            <div class="getInTouch__col1">
+                <p>
+                    Get in touch using the details below
+                </p>
+            </div>
+        </div>
+
+        <div class="getInTouchAfter">
+            <div class="arrow-down"></div>
+        </div>
+
+        <div class="getInTouchContacts row90">
+            <div class="getInTouchContacts__col getInTouchContacts__col--1">
+                <h2 class="getInTouchContacts__h">Sales</h2>
+                <p class="getInTouchContacts__number">020 7183 3787</p>
+                <p class="getInTouchContacts__time">09.00 – 17.30 | Monday to Friday</p>
+            </div>
+
+            <div class="vl"></div>
+
+            <div class="getInTouchContacts__col getInTouchContacts__col--2">
+                <h2 class="getInTouchContacts__h">Support</h2>
+                <p class="getInTouchContacts__number">020 7183 3787</p>
+                <p class="getInTouchContacts__time">09.00 – 17.30 | Monday to Friday</p>
+            </div>
+
+            <div class="vl"></div>
+
+            <div class="getInTouchContacts__col getInTouchContacts__col--3">
+                <h2 class="getInTouchContacts__h">Billing</h2>
+                <p class="getInTouchContacts__number">020 7183 3787</p>
+                <p class="getInTouchContacts__time">09.00 – 17.30 | Monday to Friday</p>
+            </div>
+        </div>
+    </div>
+    <!-- get in touch end  -->
+
+
+
+    <!-- FOOTER  -->
+    <div class="footerContainer">
+        <!-- TOP FOOTER  -->
+        <div class="footer1Wrapper">
+            <div class="footer1 row90">
+                <!-- ABOUT US  -->
+                <div class="footer1AboutUs">
+                    <!-- logo -->
+                    <img src="img/Logo.svg" alt="" class="footer1AboutUs__logo">
+                    <!-- about  -->
+                    <p class="footer1AboutUs__about">
+                        The London Office is a UK-based, behind-the-scenes business to business service provider
+                        specialising in Registered Office Address and Telephone Answering services with cost-effective
+                        products and customer service at its core.
+                    </p>
+                    <!-- socials  -->
+                    <div class="footer1AboutUs__socials">
+                        <a href="https://www.linkedin.com/company/registered-office-uk-ltd/" target="blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+
+                        <a href="https://www.facebook.com/registeredoffice" target="blank"><i
+                                class="fab fa-facebook-f"></i></a>
+
+                        <a href="https://twitter.com/registered_uk" target="blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <!-- apps  -->
+                    <div class="footer1AboutUs__apps">
+                        <a href="https://apps.apple.com/us/app/the-london-office/id1240742424?ls=1" target="blank">
+                            <img src="img/AppApple.png" alt="">
+                        </a>
+
+                        <a href="https://play.google.com/store/apps/details?id=com.london.home&hl=en" target="blank">
+                            <img src="img/AppGooogle.png" alt="">
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- SERVICES  -->
+                <div class="footer1Services">
+                    <!-- our services  -->
+                    <div class="footer1Services__block footer1Services__block--1">
+                        <h2>Our Services</h2>
+                        <a href="service1.html">Registered Office Address</a>
+                        <a href="service2.html">Director Service Address</a>
+                        <a href="service3.html">Virtual Business Address</a>
+                        <a href="service4.html">Virtual Business Plus</a>
+                    </div>
+                    <!-- additional services  -->
+                    <div class="footer1Services__block footer1Services__block--2">
+                        <h2>Additional Services</h2>
+                        <a href="service5.html">Telephone Answering Service</a>
+                        <a href="service6.html">Free Limited Company Formation</a>
+                        <a href="service7.html">Meeting Rooms</a>
+                    </div>
+                </div>
+
+                <!-- OTHER LINKS  -->
+                <div class="footer1Links">
+                    <div class="footer1Links__row1">
+                        <!-- our company  -->
+                        <div class="footer1Links__ourCompany">
+                            <h2>Our Company</h2>
+                            <a href="aboutUs.html">About Us</a>
+                            <a href="blog.html">Blog</a>
+                            <a href="locations.html">Locations</a>
+                            <a href="pricing.html">Pricing</a>
+                            <a href="FAQ.html">FAQs</a>
+                        </div>
+                        <!-- other links  -->
+                        <div class="footer1Links__otherLinks">
+                            <h2>Other Links</h2>
+                            <a href="#">Make a Payment</a>
+                            <a href="#">Jobs</a>
+                            <a href="#">Our Website</a>
+                            <a href="#">Book a Tour</a>
+                        </div>
+                        <!-- contact us  -->
+                        <div class="footer1Links__contactUs">
+                            <h2>Contact Us</h2>
+                            <p>
+                                Our Address: </br>85 Great Portland St, </br>First Floor, </br>London, </br>United
+                                Kingdom, </br>W1W 7LT
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- world pay  -->
+                    <div class="footer1Links__worldPay">
+                        <img src="img/WorldPayLogo.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- top footer end  -->
+        <!-- BOTTOM FOOTER  -->
+        <div class="footer2Wrapper">
+            <div class="footer2 row90">
+                <div class="footer2Copy">
+                    <p>
+                        &#169; 2020 The London Office, All Rights Reserved. A division of Registered Office (UK) Ltd |
+                        VAT Registration No: 263 8779 53 | Company Registration No: 0934 7868
+                    </p>
+                </div>
+                <div class="footer2Links">
+                    <a href="privacyPolicy.html" class="footer2Links__link">Privacy &#38; Cookies</a>
+                    <div class="footer2Links__vl"></div>
+                    <a href="termsAndConditions.html" class="footer2Links__link">T&#38;Cs</a>
+                    <div class="footer2Links__vl"></div>
+                    <a href="siteSecurity.html" class="footer2Links__link">Site Security</a>
+                </div>
+            </div>
+        </div>
+        <!-- bottom footer end  -->
+    </div>
+    <!-- footer end  -->
+
+
+    <!-- LOG IN MODAL  -->
+    <div class="modalContainer closeModal" id="modalContainerLogIn">
+        <div class="modal modal--logIn logInModal">
+
+            <!-- styles are in forms.scss and modals.scss  -->
+            <div class="modal__head">
+                <h1>
+                    Log In To Your Office Support Account
+                </h1>
+                <i class="fas fa-times" id="closeLogInModal"></i>
+            </div>
+
+            <form action="post" class="myForms logInForm">
+                <!-- form name  -->
+                <input type="text" id="email" class="myForms__input logInEMail" name="name" placeholder="Your e-mail..">
+
+                <!-- form email  -->
+                <input type="text" id="pass" class="myForms__input logInPass" name="pass" placeholder="Your password..">
+
+                <!-- forgotten  password  -->
+                <a href="#" class="forgottenPassBtn">Forgotten your password?</a>
+
+                <!-- form submit  -->
+                <input type="submit" class=" myForms__submit logInSubmit" value="LOG IN">
+
+                <!-- form agree to terms and conditions  -->
+                <div class="myForms__checkbox logIn__terms">
+                    <input type="checkbox" id="logInTerms" name="logInTerms" value="Terms and Conditions">
+                    <label for="logInTermLable">
+                        I agree to the
+                        <a href="termsAndConditions.html" target="blank">Terms and Conditions</a>
+                    </label>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <!-- log in modal end  -->
+
+
+
+    <!-- FORGOTTEN PASSWORD MODAL  -->
+    <div class="modalContainer closeModal" id="modalContainerForgottenPass">
+
+        <div class="modal modal--forgottenPass forgottenPassModal">
+
+            <!-- styles are in forms.scss and modals.scss  -->
+            <div class="modal__head">
+                <h1>
+                    Forgot Your Password?
+                </h1>
+            </div>
+
+            <form action="post" class="myForms">
+                <!-- form name  -->
+                <input type="text" id="email" class="myForms__input forgottenPassEMail" name="name"
+                    placeholder="Your e-mail..">
+
+                <!-- back to log in  -->
+                <a href="#" class="backToLogInBtn"><i class="fas fa-arrow-left"></i> Back to Log In</a>
+
+                <!-- form submit  -->
+                <input type="submit" class="forgottenPassSubmit myForms__submit" value="SUBMIT">
+            </form>
+
+        </div>
+
+    </div>
+    <!-- forgotten password modal end  -->
+
+    <!-- 10% OFF MODAL  -->
+    <!-- styles are in forms.scss and modals.scss  -->
+    <div class="modalContainer closeModal" id="modalContainer10-OFF">
+        <div class="modal discountModal">
+            <div class="modal__head2">
+                <i class="fas fa-times closeDiscountModal"></i>
+                <h1>
+                    10% Off </br> Your First Order
+                </h1>
+            </div>
+
+            <input type="email" class="input1" id="discountEmail"
+                placeholder="Enter your email to receive 10% discount code">
+
+            <button type="button" id="discout_submit">Submit</button>
+
+            <p>
+                By entering your email, you agree to receive marketing communications from us. Your details will be
+                stored securely and will not be shared with any third parties. You can unsubscribe at any time.
+            </p>
+
+            <p class="discountModal__noThanks closeDiscountModal">
+                No thanks
+            </p>
+        </div>
+    </div>
+    <!-- 10% off modal end  -->
+</body>

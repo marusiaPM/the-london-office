@@ -1,0 +1,227 @@
+//DROP DOWN - SERVICE DROP DOWN IN THE NAVIGATION
+#servicesDropDownBtn{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover{
+        cursor: pointer;
+    }
+} 
+
+
+//NAV DROP DOWN
+.dropDown1{
+    z-index: 10;
+
+    position: absolute;
+    right: 0;
+    margin-top: 2.5rem;
+    
+    width: 1200px;
+    max-width: 100%;
+
+    background: $blue1;
+    border-top: 2px solid $oran1;
+    padding: 3rem 4rem;
+
+    @include Flex1;
+    justify-content: space-between !important;
+
+    &__column{
+        list-style: none;
+        margin: 0 4rem 0 0;
+        width: fit-content;
+
+        li{
+            margin-bottom: 2.3rem;
+        }
+
+        a{
+            text-decoration: none;
+            @include F1R;
+            font-size: 1.6rem !important;
+            color:  $white;
+            transition: all 0.5s ease;
+    
+            &:hover{
+                color: $oran1;
+            }
+        }
+
+        .activeLink{
+            a{
+                color: $oran2;
+            }
+        }
+
+        &--last{
+            margin: 0 0 0 0;
+        }
+
+        &--bottom{
+            margin-top: 5rem;
+            width: 100%;
+        }
+    }
+
+    &__heading{
+        @include F1R;
+        font-size: 1.8rem !important;
+        color:  $oran1;
+        margin-bottom: 4.5rem !important;
+    }
+
+}
+
+.hideDropDown{
+    display: none;
+}
+
+.showDropDown1{
+    @include Flex2;
+    align-items: flex-start;
+    @include slideD-10px;
+}
+
+@media screen and (max-width: 1400px){
+    .dropDown1{
+        position: relative;
+        width: 100%;
+
+        border: none;
+        flex-direction: column;
+
+        margin-top: 0;
+        padding: 0 0 3rem 0;
+
+        &__column{
+            width: fit-content;
+            margin: 0 auto;
+            text-align: center;
+    
+            li{
+                margin-bottom: 1.5rem;
+            }
+
+            a{
+                text-decoration: none;
+                @include F1R;
+                font-size: 2rem !important;
+                color:  $white;
+                transition: all 0.5s ease;
+        
+                &:hover{
+                    color: $oran1;
+                }
+            }
+    
+    
+        }
+    
+        &__heading{
+            @include F1R;
+            font-size: 2rem !important;
+            color:  $oran1;
+            margin-bottom: 1rem !important;
+            margin-top: 3rem;
+        }
+
+        &__bottom{
+            border-top: none;
+        
+            padding: 1rem 0 0 1rem;
+            margin-top: 0rem;
+    
+            li{
+                @include F1R;
+                font-size: 1.8rem !important;
+                color:  $oran1;
+            }
+    
+            span{
+                @include F1R;
+                font-size: 1.8rem !important;
+                color:  $white;
+                margin-left: 1rem;
+            }
+        }
+    }       
+}
+
+
+// DROP DOWN - like the one on locations
+.DropDownMenu{
+    position: relative;
+    width: 30rem;
+    margin: auto;
+    margin-top: 3rem;
+
+    &__btn{
+        width: 30rem;
+        margin: auto;
+    
+        @include F1R;
+        font-size: 2rem;
+        line-height: 100%;
+        color: $white;
+        text-align: center;
+    
+        padding: 1.5rem 2rem;
+        background-color: $oran1;
+        border-radius: 6px;
+    
+        i{
+            font-size: 2.1rem;
+            margin-left: 2rem;
+        }
+    
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+
+    &__dropDown{
+        z-index: 10;
+        position: absolute;
+        width: 30rem;
+        margin: 0.5rem auto;
+        padding: 1rem 0;
+    
+        list-style: none;
+        background-color: $white;
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    
+        li{
+            padding: 2rem 1rem;
+            transition: all 0.5s ease;
+    
+            a{
+                text-decoration: none;
+                @include F1R;
+                font-size: 1.8rem;
+                color: $black;
+            }
+    
+            &:hover{
+                background-color: #EFEFEF;
+                cursor: pointer;
+    
+                a{
+                    color: $oran1;
+                }
+            }
+        }
+    
+        
+    }
+}
+.DropDownMenuOpen{
+    display: block;
+    @include slideD-10px;
+}
+
+.DropDownMenuClose{
+    display: none;
+}
